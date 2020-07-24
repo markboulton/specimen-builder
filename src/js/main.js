@@ -90,7 +90,29 @@ for (const interactive of interactives) {
 			}
 		};
 	}
+
+	// Alignment controls for type tester
+	var alignButton = document.getElementById('align-left');
+		alignButton.addEventListener('click', function() {
+			document.getElementById('preview').classList.remove('align-right', 'justify');
+			document.getElementById('preview').classList.add('align-left');
+	});
+	var alignButton = document.getElementById('align-right');
+		alignButton.addEventListener('click', function() {
+			document.getElementById('preview').classList.remove('align-left', 'justify');
+			document.getElementById('preview').classList.add('align-right');
+	});
+	var alignButton = document.getElementById('align-justify');
+		alignButton.addEventListener('click', function() {
+			document.getElementById('preview').classList.remove('align-left', 'align-right');
+			document.getElementById('preview').classList.add('justify');
+	});
 }
+
+
+
+
+
 
 // Watch if .am-i-in-view elements are visible on screen
 // and apply a class accordingly

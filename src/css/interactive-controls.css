@@ -4,6 +4,7 @@
 
 .interactive-controls-text {
 	font-size: calc(var(--font-size) * 1px);
+	line-height: var(--line-height);
 }
 
 .interactive-controls-instances,

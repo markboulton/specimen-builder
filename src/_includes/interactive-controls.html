@@ -1,6 +1,26 @@
 <div class="interactive-controls">
 	<h2>Axes & Instances</h2>
+
+	<ul>
+		<li><a href="#" id="align-left" class="active">Left</a></li>
+		<li><a href="#" id="align-right" >Right</a></li>
+		<li><a href="#" id="align-justify" >Justify</a></li>
+	</ul>
+
 	<ul class="interactive-controls-sliders">
+		<li>
+			<label for="interactive-controls-line-height">Line height</label>
+			<input
+				type="range"
+				min="1"
+				max="2"
+				value="1.1"
+				name="line-height"
+				id="interactive-controls-line-height"
+				step="0.1"
+				class="interactive-controls-slider"
+			/>
+		</li>
 		<li>
 			<label for="interactive-controls-fontsize">Size</label>
 			<input
@@ -45,10 +65,8 @@
 		</select>
 	</div>
 
-	<div class="interactive-controls-text fit-this-text" contenteditable="true">
-		<h1>EU summit kicks off</h1>
-		<h1>Reality</h1>
-		<h2>Observer</h2>
+	<div id="preview" class="interactive-controls-text" contenteditable="true">
+		<h1>Let's see if it's the length of something that shows up the line-height as a range slider, but maybe not</h1>
 		<p></p>
 		<p></p>
 	</div>
