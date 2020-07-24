@@ -1,0 +1,50 @@
+[
+    {
+        "name": "ExtraLight",
+        "axes": {
+            "wght": 200
+        }
+    },
+    {
+        "name": "Light",
+        "axes": {
+            "wght": 300
+        }
+    },
+    {
+        "name": "Regular",
+        "axes": {
+            "wght": 400
+        }
+    },
+    {
+        "name": "Medium",
+        "axes": {
+            "wght": 500
+        }
+    },
+    {
+        "name": "SemiBold",
+        "axes": {
+            "wght": 600
+        }
+    },
+    {
+        "name": "Bold",
+        "axes": {
+            "wght": 700
+        }
+    },
+    {
+        "name": "ExtraBold",
+        "axes": {
+            "wght": 800
+        }
+    },
+    {
+        "name": "Black",
+        "axes": {
+            "wght": 900
+        }
+    }
+]

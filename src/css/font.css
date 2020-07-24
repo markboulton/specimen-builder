@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "CrimsonPro-ExtraLight";
+    src: url("../fonts/CrimsonPro-VariableFont_wght.woff2");
+    font-weight: 200 900;
+}
+
+body {
+    font-family: "CrimsonPro-ExtraLight", monospace;
+}
+
+:root {
+    --wght: 200;
+}
+
+*, *::before, *::after {
+    font-variation-settings: "wght" var(--wght);
+}

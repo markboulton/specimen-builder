@@ -1,0 +1,60 @@
+:root {
+	--character-grid-cell: 4rem;
+	--character-grid-font-zize: 3rem;
+	--character-grid-gap: 0;
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
+}
+
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+.container-glyphs {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 1px 1px;
+	grid-template-areas: "preview glyphs";
+}
+
+.character-grid-zoom {
+	grid-area: glyphs;
+	background: #ffffff;
+	font-size: 28vw;
+	border: 1px solid #999999;
+	padding: 2vw;
+	text-align: center;
+}
+
+.character-grid {
+	grid-area: preview;
+	list-style-type: none;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(var(--character-grid-cell), 1fr)
+	);
+	column-gap: var(--character-grid-gap);
+	row-gap: var(--character-grid-gap);
+	font-size: var(--character-grid-font-zize);
+}
+
+.character-grid > li {
+	height: var(--character-grid-cell);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #666666;
+}
+
+.character-grid > li:hover  {
+	cursor: pointer;
+	background-color: #eeeeee;
+}
+

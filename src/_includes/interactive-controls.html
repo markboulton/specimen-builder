@@ -1,0 +1,55 @@
+<div class="interactive-controls">
+	<h2>Axes & Instances</h2>
+	<ul class="interactive-controls-sliders">
+		<li>
+			<label for="interactive-controls-fontsize">Size</label>
+			<input
+				type="range"
+				min="9"
+				max="260"
+				value="56"
+				name="font-size"
+				id="interactive-controls-fontsize"
+				step="any"
+				class="interactive-controls-slider"
+			/>
+		</li>
+		{% for axis in axes %}
+		<li>
+			<label for="axis-{{ axis.axis }}">{{ axis.name }}</label>
+			<input
+				type="range"
+				min="{{ axis.min }}"
+				max="{{ axis.max }}"
+				value="{{ axis.default }}"
+				name="{{ axis.axis }}"
+				id="axis-{{ axis.axis }}"
+				step="{{ axis.step | default: 0.1 }}"
+				class="interactive-controls-slider"
+			/>
+		</li>
+		{% endfor %}
+	</ul>
+
+	<div>
+		<label for="interactive-controls-instances-select">Instances</label>
+		<select
+			id="interactive-controls-instances-select"
+			class="interactive-controls-instances"
+		>
+			{% for instance in instances %}
+			<option value="{{ instance.axes | json_stringify | escape }}"
+				>{{ instance.name }}</option
+			>
+			{% endfor %}
+		</select>
+	</div>
+
+	<div class="interactive-controls-text fit-this-text" contenteditable="true">
+		<h1>EU summit kicks off</h1>
+		<h1>Reality</h1>
+		<h2>Observer</h2>
+		<p></p>
+		<p></p>
+	</div>
+</div>

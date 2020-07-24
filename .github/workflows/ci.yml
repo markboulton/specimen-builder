@@ -1,0 +1,82 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Set Node.js
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node_modules-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-node_modules-
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Test
+      run: yarn test
+
+    - name: Build 11ty site
+      run: yarn build
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: site
+        path: _site/
+
+  deploy:
+    if: false && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+    - name: Write deploy key
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+      run: |
+        echo "$DEPLOY_KEY" > /tmp/deploy-key
+        chmod 0600 /tmp/deploy-key
+        mkdir -p ~/.ssh
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+    - name: Download artifacts
+      uses: actions/download-artifact@v1
+      with:
+        name: site
+        path: ./
+
+    - name: Init repo
+      run: |
+        git init
+        git config user.email "deployer@github"
+        git config user.name "Deployer"
+
+    - name: Commit
+      run: |
+        git add .
+        git commit -m "Deploy"
+
+    - name: Push
+      env:
+        GIT_SSH_COMMAND: "ssh -i /tmp/deploy-key"
+      run: |
+        git remote add origin git@github.com:$GITHUB_REPOSITORY.git
+        git push -f origin HEAD:gh-pages

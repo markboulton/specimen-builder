@@ -1,0 +1,223 @@
+main {
+	max-width: 90rem;
+}
+
+
+/* Container: Setting */
+
+.setting {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+}
+
+.column-1 {
+	grid-column: 1;
+}
+
+.column-2 {
+	grid-column: 2;
+}
+
+.setting p {
+	margin: 0.6em 0 0.4em 0;
+	padding: 0;
+}
+
+
+/* Typesetting utility classes */
+
+/* Font sizes (relative to viewport) */
+
+.xxxl {
+	font-size: 6.2rem;
+}
+
+.xxl {
+	font-size: 3.4rem;
+}
+
+.xl {
+	font-size: 2.8rem;
+}
+
+.l {
+	font-size: 1.8rem;
+}
+
+.m {
+	font-size: 1.6rem;
+}
+
+.s {
+	font-size: 0.8rem;
+}
+
+.xs {
+	font-size: 0.7rem;
+}
+
+.xxs {
+	font-size: 0.6rem;
+}
+
+.xxxs {
+	font-size: 0.5rem;
+}
+
+/* Meta */
+
+.meta {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.7em;
+	color: #666666;
+}
+
+/* font weights EXPERIMENTAL */
+
+.fw100 {font-variation-settings: "wght" 100;}
+.fw200 {font-variation-settings: "wght" 200;}
+.fw300 {font-variation-settings: "wght" 300;}
+.fw400 {font-variation-settings: "wght" 400;}
+.fw500 {font-variation-settings: "wght" 500;}
+.fw600 {font-variation-settings: "wght" 600;}
+.fw700 {font-variation-settings: "wght" 700;}
+.fw800 {font-variation-settings: "wght" 800;}
+.fw900 {font-variation-settings: "wght" 900;}
+
+/* Line height */
+.lh08 {line-height: 0.8;}
+.lh09 {line-height: 0.9;}
+.lh10 {line-height: 1;}
+.lh11 {line-height: 1.1;}
+.lh12 {line-height: 1.2;}
+.lh13 {line-height: 1.3;}
+.lh14 {line-height: 1.4;}
+
+
+
+/* Columns */
+.columns-2 {
+	column-count: 2;
+	column-gap: 1em;
+}
+
+.columns-3 {
+	column-count: 3;
+	column-gap: 0.8em;
+}
+
+/* Alignment */
+.centre {
+	text-align: center;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.rangeleft {
+	text-align: left;
+}
+
+.rangeright {
+	text-align: right;
+}
+
+
+
+
+
+
+/* Range slider */
+
+input[type=range] {
+	height: 2em;
+	-webkit-appearance: none;
+	width: 100%;
+  }
+  input[type=range]:focus {
+	outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	animate: 0.2s;
+	box-shadow: 0px 0px 0px #000000;
+	background: #000000;
+	border-radius: 0px;
+	border: 0px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+	box-shadow: 0px 0px 0px #000000;
+	border: 0px solid #000000;
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	background: #000000;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -8px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+	background: #000000;
+  }
+  input[type=range]::-moz-range-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	animate: 0.2s;
+	box-shadow: 0px 0px 0px #000000;
+	background: #000000;
+	border-radius: 0px;
+	border: 0px solid #000000;
+  }
+  input[type=range]::-moz-range-thumb {
+	box-shadow: 0px 0px 0px #000000;
+	border: 0px solid #000000;
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	background: #000000;
+	cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	animate: 0.2s;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+	background: #000000;
+	border: 0px solid #000000;
+	border-radius: 0px;
+	box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+	background: #000000;
+	border: 0px solid #000000;
+	border-radius: 0px;
+	box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-thumb {
+	margin-top: 1px;
+	box-shadow: 0px 0px 0px #000000;
+	border: 0px solid #000000;
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	background: #000000;
+	cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+	background: #000000;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+	background: #000000;
+  }
