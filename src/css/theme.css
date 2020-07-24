@@ -126,8 +126,18 @@ main {
 	text-align: right;
 }
 
+.btn {
+	border: 1px solid #000000;
+	padding: 0.5em;
+}
 
+.active {
+	background: #000000;
+}
 
+.active a {
+	color: #ffffff;
+}
 
 
 

@@ -1,10 +1,10 @@
 <div class="interactive-controls">
 	<h2>Axes & Instances</h2>
 
-	<ul>
-		<li><a href="#" id="align-left" class="active">Left</a></li>
-		<li><a href="#" id="align-right" >Right</a></li>
-		<li><a href="#" id="align-justify" >Justify</a></li>
+	<ul id="myBtnContainer">
+		<li class="btn active"><a href="#" id="align-left">Left</a></li>
+		<li class="btn"><a href="#" id="align-right">Right</a></li>
+		<li class="btn"><a href="#" id="align-justify">Justify</a></li>
 	</ul>
 
 	<ul class="interactive-controls-sliders">
@@ -12,12 +12,12 @@
 			<label for="interactive-controls-line-height">Line height</label>
 			<input
 				type="range"
-				min="1"
+				min="0.8"
 				max="2"
 				value="1.1"
 				name="line-height"
 				id="interactive-controls-line-height"
-				step="0.1"
+				step="0.05"
 				class="interactive-controls-slider"
 			/>
 		</li>

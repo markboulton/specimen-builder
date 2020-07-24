@@ -92,14 +92,24 @@ for (const interactive of interactives) {
 	}
 
 	// Alignment controls for type tester
+	// Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+    }
+
 	var alignButton = document.getElementById('align-left');
-		alignButton.addEventListener('click', function() {
-			this.classList.add('align-left');
+		alignButton.addEventListener('click', function() {	
 			document.getElementById('preview').classList.remove('align-right', 'justify');
 			document.getElementById('preview').classList.add('align-left');
 	});
 	var alignButton = document.getElementById('align-right');
-		alignButton.addEventListener('click', function() {
+		alignButton.addEventListener('click', function() {	
 			document.getElementById('preview').classList.remove('align-left', 'justify');
 			document.getElementById('preview').classList.add('align-right');
 	});
@@ -111,6 +121,7 @@ for (const interactive of interactives) {
 }
 
 
+	
 
 
 
