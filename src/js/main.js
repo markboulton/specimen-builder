@@ -94,6 +94,7 @@ for (const interactive of interactives) {
 	// Alignment controls for type tester
 	var alignButton = document.getElementById('align-left');
 		alignButton.addEventListener('click', function() {
+			this.classList.add('align-left');
 			document.getElementById('preview').classList.remove('align-right', 'justify');
 			document.getElementById('preview').classList.add('align-left');
 	});
