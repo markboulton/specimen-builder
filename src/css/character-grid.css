@@ -43,6 +43,9 @@ ol {
 	column-gap: var(--character-grid-gap);
 	row-gap: var(--character-grid-gap);
 	font-size: var(--character-grid-font-zize);
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	background: #eeeeee;
 }
 
 .character-grid > li {
@@ -50,11 +53,12 @@ ol {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-left: 1px solid #666666;
 }
 
 .character-grid > li:hover  {
 	cursor: pointer;
-	background-color: #eeeeee;
+	background-color: #ffffff;
 }
 
