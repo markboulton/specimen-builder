@@ -1,9 +1,3 @@
-/* Generic CSS */
-:root {
-	--page-bg: #fff;
-	--page-text: #000;
-}
-
 *,
 *::before,
 *::after {
@@ -14,8 +8,6 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	background: var(--page-bg);
-	color: var(--page-text);
 }
 
 ol,

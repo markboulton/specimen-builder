@@ -1,17 +1,24 @@
 @font-face {
-    font-family: "CrimsonPro-ExtraLight";
-    src: url("../fonts/CrimsonPro-VariableFont_wght.woff2");
-    font-weight: 200 900;
+	font-family: "Recursive-SansLinearLight";
+	src: url("../fonts/Recursive-VariableFont.ttf");
+	font-weight: 300 1000;
 }
 
 body {
-    font-family: "CrimsonPro-ExtraLight", monospace;
+	font-family: "Recursive-SansLinearLight", monospace;
 }
 
 :root {
-    --wght: 200;
+	--MONO: 0;
+	--CASL: 0;
+	--wght: 300;
+	--slnt: 0;
+	--CRSV: 0.5;
 }
 
-*, *::before, *::after {
-    font-variation-settings: "wght" var(--wght);
+*,
+*::before,
+*::after {
+	font-variation-settings: "MONO" var(--MONO), "CASL" var(--CASL),
+		"wght" var(--wght), "slnt" var(--slnt), "CRSV" var(--CRSV);
 }

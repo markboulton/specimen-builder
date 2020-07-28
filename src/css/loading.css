@@ -8,7 +8,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: hotpink;
+	background: #000;
+	color: #fff;
 	font-family: monospace;
 	pointer-events: none;
 	user-select: none;

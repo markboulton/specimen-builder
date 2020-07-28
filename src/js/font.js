@@ -1,1 +1,1 @@
-export const fontName = "CrimsonPro-ExtraLight";
+export const fontName = "Recursive-SansLinearLight";

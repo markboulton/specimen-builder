@@ -93,38 +93,38 @@ for (const interactive of interactives) {
 
 	// Alignment controls for type tester
 	// Add active class to the current button (highlight it)
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-    }
+	var btnContainer = document.getElementById("myBtnContainer");
+	var btns = btnContainer.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+		btns[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+		});
+	}
 
-	var alignButton = document.getElementById('align-left');
-		alignButton.addEventListener('click', function() {	
-			document.getElementById('preview').classList.remove('align-right', 'justify');
-			document.getElementById('preview').classList.add('align-left');
+	var alignButtonLeft = document.getElementById("align-left");
+	alignButtonLeft.addEventListener("click", function() {
+		document
+			.getElementById("preview")
+			.classList.remove("align-right", "align-centre");
+		document.getElementById("preview").classList.add("align-left");
 	});
-	var alignButton = document.getElementById('align-right');
-		alignButton.addEventListener('click', function() {	
-			document.getElementById('preview').classList.remove('align-left', 'justify');
-			document.getElementById('preview').classList.add('align-right');
+	var alignButtonRight = document.getElementById("align-right");
+	alignButtonRight.addEventListener("click", function() {
+		document
+			.getElementById("preview")
+			.classList.remove("align-left", "align-centre");
+		document.getElementById("preview").classList.add("align-right");
 	});
-	var alignButton = document.getElementById('align-justify');
-		alignButton.addEventListener('click', function() {
-			document.getElementById('preview').classList.remove('align-left', 'align-right');
-			document.getElementById('preview').classList.add('justify');
+	var alignButtonCentre = document.getElementById("align-centre");
+	alignButtonCentre.addEventListener("click", function() {
+		document
+			.getElementById("preview")
+			.classList.remove("align-left", "align-right");
+		document.getElementById("preview").classList.add("align-centre");
 	});
 }
-
-
-	
-
-
-
 
 // Watch if .am-i-in-view elements are visible on screen
 // and apply a class accordingly

@@ -16,17 +16,17 @@ ol {
 
 .container-glyphs {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1fr 2fr;
 	grid-template-rows: 1fr;
 	gap: 1px 1px;
-	grid-template-areas: "preview glyphs";
+	grid-template-areas: "glyphs preview ";
 }
 
 .character-grid-zoom {
 	grid-area: glyphs;
-	background: #ffffff;
+	background: var(--background);
 	font-size: 28vw;
-	border: 1px solid #999999;
+	border: 1px solid var(--grey-mid);
 	padding: 2vw;
 	text-align: center;
 }
@@ -43,9 +43,9 @@ ol {
 	column-gap: var(--character-grid-gap);
 	row-gap: var(--character-grid-gap);
 	font-size: var(--character-grid-font-zize);
-	border-right: 1px solid #666666;
-	border-bottom: 1px solid #666666;
-	background: #eeeeee;
+	border-right: 1px solid var(--grey-dark);
+	border-bottom: 1px solid var(--grey-dark);
+	background: var(--background);
 }
 
 .character-grid > li {
@@ -53,12 +53,11 @@ ol {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-top: 1px solid #666666;
-	border-left: 1px solid #666666;
+	border-top: 1px solid var(--grey-dark);
+	border-left: 1px solid var(--grey-dark);
 }
 
-.character-grid > li:hover  {
+.character-grid > li:hover {
 	cursor: pointer;
-	background-color: #ffffff;
+	background-color: var(--grey-light);
 }
-
