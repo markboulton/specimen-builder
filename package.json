@@ -76,11 +76,6 @@
 			"stylelint"
 		]
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
 	"dependencies": {
 		"fontfaceobserver": "^2.1.0"
 	},
