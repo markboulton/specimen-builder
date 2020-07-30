@@ -76,7 +76,8 @@ main {
 
 /* Font sizes (relative to viewport) */
 .type-8xl {
-	font-size: clamp(5rem, 21vw, 19rem);
+	font-size: clamp(5rem, 25vw, 21rem);
+	line-height: 1;
 	padding: 0;
 	margin: 0;
 }
@@ -255,7 +256,7 @@ button {
 .controls {
 	grid-area: controls;
 	border-left: 1px solid #000;
-	padding-left: 2vw;
+	padding-left: 1vw;
 	font-family: var(--font-system);
 }
 
@@ -398,10 +399,22 @@ input[type="range"]:focus::-ms-fill-upper {
 
 /* Masthead */
 
+.masthead {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 1px 1px;
+	grid-template-areas: "title meta";
+}
 
+.masthead-title {
+	grid-area: title;
+}
 
 .masthead-meta {
+	grid-area: meta;
 	font-size: 0.8rem;
 	font-family: var(--font-system);
 	line-height: 1.3;
+	padding-left: 1vw;
 }

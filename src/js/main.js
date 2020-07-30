@@ -130,9 +130,6 @@ for (const interactive of interactives) {
 
 
 
-
-
-
 // Watch if .am-i-in-view elements are visible on screen
 // and apply a class accordingly
 if ("IntersectionObserver" in window) {
