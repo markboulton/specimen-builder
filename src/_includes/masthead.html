@@ -1,28 +1,19 @@
 <div class="masthead">
 	<div class="masthead-title">
-		<h2 class="type-xl fw400">{{ site.typeface }}</h2>
-		<p class="type-8xl fw900">Gg Ss</p>
+		<h2 class="type-xl fw400">{{ content.typeface }}</h2>
+		<p class="type-8xl fw900">{{ content.poster }}</p>
 	</div>
 
 	<div class="masthead-meta">
-		<button>Get {{ site.typeface }}</button>
+		<a href="{{ content.link }}" class="button">Get {{ content.typeface }}</a>
 
-		<p>{{ site.about }}</p>
+		<p>{{ content.about }}</p>
 
 		<h3>Published</h3>
-		<p>2019</p>
+		<p>{{ content.published }}</p>
 
 		<h3>Designers</h3>
-		<ul>
-			<li><a href="">Arrow Type</a></li>
-			<li><a href="">Stephen Nixon</a></li>
-		</ul>
-
-		<h3>Features</h3>
-		<ul>
-			<li>Opentype features</li>
-			<li>Variable font</li>
-		</ul>
+		<p>{{ content.designers }}</p>
 
 		<h3>Language support</h3>
 		<ul>

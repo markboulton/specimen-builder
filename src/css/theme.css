@@ -77,7 +77,6 @@ main {
 /* Font sizes (relative to viewport) */
 .type-8xl {
 	font-size: clamp(5rem, 25vw, 21rem);
-	line-height: 1;
 	padding: 0;
 	margin: 0;
 }
@@ -417,4 +416,24 @@ input[type="range"]:focus::-ms-fill-upper {
 	font-family: var(--font-system);
 	line-height: 1.3;
 	padding-left: 1vw;
+}
+
+.button {
+	background-color: var(--text);
+	display: inline-block;
+	padding: 1em 3em;
+	margin: 2em 0 0 0;
+	color: var(--background);
+	text-decoration: none;
+	font-weight: 600;
+	border: 1px solid var(--background);
+}
+
+.button:hover {
+	background-color: var(--background);
+	color: var(--text);
+	border: 1px solid var(--text);
+	transition-duration: 200ms;
+	transition-property: color, background-color;
+	transition-timing-function: ease;
 }
