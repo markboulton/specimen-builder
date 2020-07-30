@@ -6,7 +6,10 @@ html {
 	--grey-dark: #666;
 	--text: var(--dark);
 	--background: var(--light);
+	--font-system: 'Inter', sans-serif;
 }
+
+
 
 html[data-dark-mode="true"] {
 	--text: var(--light);
@@ -28,6 +31,11 @@ main {
 
 /* Container: Setting */
 
+.container {
+	border-top: 1px solid var(--text);
+	padding: 0;
+}
+
 .setting {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -47,12 +55,36 @@ main {
 	padding: 0;
 }
 
+
+/* Spacing utility classes */
+.m-1u {margin-top: 1rem;}
+.m-2u {margin-top: 2rem;}
+.m-3u {margin-top: 3rem;}
+.m-4u {margin-top: 4rem;}
+.m-5u {margin-top: 5rem;}
+
+.p-1u {padding-top: 1rem;}
+.p-2u {padding-top: 2rem;}
+.p-3u {padding-top: 3rem;}
+.p-4u {padding-top: 4rem;}
+.p-5u {padding-top: 5rem;}
+
 /* Typesetting utility classes */
 .italic {
 	font-style: italic;
 }
 
 /* Font sizes (relative to viewport) */
+.type-8xl {
+	font-size: clamp(5rem, 21vw, 19rem);
+	padding: 0;
+	margin: 0;
+}
+.type-7xl {
+	font-size: clamp(4rem, 17vw, 17.5rem);
+	padding: 0;
+	margin: 0;
+}
 .type-6xl {
 	font-size: clamp(3rem, 15vw, 15.5rem);
 	padding: 0;
@@ -81,7 +113,7 @@ main {
 	font-size: clamp(1.3rem, 1.6vw, 1.8rem);
 }
 .type-m {
-	font-size: 1.6rem;
+	font-size: clamp(1.2rem, 1.4vw, 1.6rem) 
 }
 .type-s {
 	font-size: 0.8rem;
@@ -165,11 +197,11 @@ main {
 /* Meta */
 
 .meta {
-	font-family: sans-serif;
+	font-family: var(--font-system);
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 0.7em;
-	color: #666666;
+	color: var(--grey-mid);
 }
 
 /* Columns */
@@ -185,16 +217,60 @@ main {
 
 /* Button styles */
 .btn {
-	border: 1px solid var(--text);
-	padding: 0.5em;
+	padding: 8px 8px 5px 8px;
 }
 
 .active {
-	background: var(--text);
+	background: var(--grey-mid);
 }
 
 .active a {
-	color: var(--background);
+	color: var(--grey-mid);
+}
+
+button {
+	padding: 0.5rem;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+  }
+  
+  button svg {
+	transition: all 200ms ease;
+	fill: var(--text);
+  }
+
+
+/* Preview layout */
+.interactive-controls {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 1px 1px;
+	grid-template-areas: "preview controls";
+}
+
+.controls {
+	grid-area: controls;
+	border-left: 1px solid #000;
+	padding-left: 2vw;
+	font-family: var(--font-system);
+}
+
+.interactive-controls-text {
+	grid-area: preview;
+	padding: 0 50px 0 0;
+}
+
+[contenteditable] {
+	outline: 0px solid transparent;
+}
+
+.interactive-controls label {
+	font-size: 0.8rem;
+	font-weight: 400;
 }
 
 /* Range slider */
@@ -212,7 +288,7 @@ input[type="range"]:focus {
 /* Webkit styles */
 input[type="range"]::-webkit-slider-runnable-track {
 	width: 100%;
-	height: 4px;
+	height: 1px;
 	cursor: pointer;
 	background: var(--text);
 	border-radius: 0px;
@@ -220,10 +296,10 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 input[type="range"]::-webkit-slider-thumb {
 	box-shadow: 0px 0px 0px var(--text);
-	border: 0px solid var(--text);
-	height: 20px;
-	width: 20px;
-	border-radius: 10px;
+	border: 3px solid var(--background);
+	height: 17px;
+	width: 17px;
+	border-radius: 12px;
 	background: var(--text);
 	cursor: pointer;
 	-webkit-appearance: none;
@@ -236,15 +312,15 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 /* Moz styles */
 input[type="range"]::-moz-range-track {
 	width: 100%;
-	height: 4px;
+	height: 1px;
 	cursor: pointer;
 	background: var(--text);
 }
 input[type="range"]::-moz-range-thumb {
-	border: 0px solid var(--text);
-	height: 20px;
-	width: 20px;
-	border-radius: 10px;
+	border: 3px solid var(--background);
+	height: 12px;
+	width: 12px;
+	border-radius: 9px;
 	background: var(--text);
 	cursor: pointer;
 }
@@ -286,4 +362,46 @@ input[type="range"]:focus::-ms-fill-lower {
 }
 input[type="range"]:focus::-ms-fill-upper {
 	background: #000000;
+}
+
+
+/* Cursor 
+
+.interactive-controls-text h1 span::after {
+	content: "";
+	position: relative;
+	top: 10px;
+	right: -15px;
+	display: inline-block;
+	background-color: #606060;
+	vertical-align: top;
+	width: 0.5rem;
+	height: calc(var(--font-size) * 2px);
+	-webkit-animation: blink 1s step-end infinite;
+	animation: blink 1s step-end infinite;
+  }
+  
+  @-webkit-keyframes blink {
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+  }
+  
+  @keyframes blink {
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+  }
+
+  */
+  
+
+/* Masthead */
+
+
+
+.masthead-meta {
+	font-size: 0.8rem;
+	font-family: var(--font-system);
+	line-height: 1.3;
 }

@@ -1,24 +1,21 @@
 @font-face {
-	font-family: "Recursive-SansLinearLight";
-	src: url("../fonts/Recursive-VariableFont.ttf");
-	font-weight: 300 1000;
+    font-family: "Recursive-SansLinearLight";
+    src: url("../fonts/Recursive-VariableFont.ttf");
+    font-weight: 300 1000;
 }
 
 body {
-	font-family: "Recursive-SansLinearLight", monospace;
+    font-family: "Recursive-SansLinearLight", monospace;
 }
 
 :root {
-	--MONO: 0;
-	--CASL: 0;
-	--wght: 300;
-	--slnt: 0;
-	--CRSV: 0.5;
+    --MONO: 0;
+    --CASL: 0;
+    --wght: 300;
+    --slnt: 0;
+    --CRSV: 0.5;
 }
 
-*,
-*::before,
-*::after {
-	font-variation-settings: "MONO" var(--MONO), "CASL" var(--CASL),
-		"wght" var(--wght), "slnt" var(--slnt), "CRSV" var(--CRSV);
+*, *::before, *::after {
+    font-variation-settings: "MONO" var(--MONO),"CASL" var(--CASL),"wght" var(--wght),"slnt" var(--slnt),"CRSV" var(--CRSV);
 }

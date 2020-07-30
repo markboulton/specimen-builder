@@ -15,6 +15,7 @@
 			rel="stylesheet"
 			href="{% webpackAssetPath '../css/main.css' %}"
 		/>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
 		<script defer src="{% webpackAssetPath '../js/main.js' %}"></script>
 		<script>
 			document.documentElement.setAttribute(
@@ -25,25 +26,6 @@
 	</head>
 
 	<body>
-		<button
-			aria-labelledby="toggle-label"
-			type="button"
-			class="dark-mode-toggle"
-		>
-			<span hidden id="toggle-label">toggle dark and light mode</span>
-			<svg
-				height="48"
-				width="48"
-				aria-hidden="true"
-				focusable="false"
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 32 32"
-			>
-				<path
-					d="M15 2h2v3h-2zM27 15h3v2h-3zM15 27h2v3h-2zM2 15h3v2H2zM5.44992604 6.88351768L6.8641396 5.4693041l2.12132034 2.12132035-1.41421356 1.41421356zM22.99965005 7.58090045l2.12132034-2.12132034 1.41421356 1.41421356L24.41386361 8.995114zM23.00230299 24.4164466l1.41421356-1.41421355 2.12132034 2.12132034-1.41421356 1.41421356zM5.47 25.13L7.59 23 9 24.42l-2.12 2.12-1.41-1.41zM16 8a8 8 0 108 8 8 8 0 00-8-8zm0 14a6 6 0 010-12z"
-				/>
-			</svg>
-		</button>
 		{{ content }}
 	</body>
 	<script>

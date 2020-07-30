@@ -91,6 +91,8 @@ for (const interactive of interactives) {
 		};
 	}
 
+	
+
 	// Alignment controls for type tester
 	// Add active class to the current button (highlight it)
 	var btnContainer = document.getElementById("myBtnContainer");
@@ -125,6 +127,11 @@ for (const interactive of interactives) {
 		document.getElementById("preview").classList.add("align-centre");
 	});
 }
+
+
+
+
+
 
 // Watch if .am-i-in-view elements are visible on screen
 // and apply a class accordingly

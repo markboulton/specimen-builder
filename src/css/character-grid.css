@@ -26,7 +26,6 @@ ol {
 	grid-area: glyphs;
 	background: var(--background);
 	font-size: 28vw;
-	border: 1px solid var(--grey-mid);
 	padding: 2vw;
 	text-align: center;
 }

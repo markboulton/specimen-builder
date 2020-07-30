@@ -1,76 +1,91 @@
 <div class="interactive-controls">
-	<h2>Axes & Instances</h2>
 
-	<ul id="myBtnContainer">
-		<li class="btn active" id="align-left"><a href="#">Left</a></li>
-		<li class="btn" id="align-centre"><a href="#">centre</a></li>
-		<li class="btn" id="align-right"><a href="#">Right</a></li>
-	</ul>
-
-	<ul class="interactive-controls-sliders">
-		<li>
-			<label for="interactive-controls-line-height">Line height</label>
-			<input
-				type="range"
-				min="0.8"
-				max="2"
-				value="1.1"
-				name="line-height"
-				id="interactive-controls-line-height"
-				step="0.05"
-				class="interactive-controls-slider"
-			/>
-		</li>
-		<li>
-			<label for="interactive-controls-fontsize">Size</label>
-			<input
-				type="range"
-				min="9"
-				max="260"
-				value="56"
-				name="font-size"
-				id="interactive-controls-fontsize"
-				step="any"
-				class="interactive-controls-slider"
-			/>
-		</li>
-		{% for axis in axes %}
-		<li>
-			<label for="axis-{{ axis.axis }}">{{ axis.name }}</label>
-			<input
-				type="range"
-				min="{{ axis.min }}"
-				max="{{ axis.max }}"
-				value="{{ axis.default }}"
-				name="{{ axis.axis }}"
-				id="axis-{{ axis.axis }}"
-				step="{{ axis.step | default: 0.1 }}"
-				class="interactive-controls-slider"
-			/>
-		</li>
-		{% endfor %}
-	</ul>
-
-	<div>
-		<label for="interactive-controls-instances-select">Weights</label>
-		<select
-			id="interactive-controls-instances-select"
-			class="interactive-controls-instances"
-		>
-			{% for instance in instances %}
-			<option value="{{ instance.axes | json_stringify | escape }}"
-				>{{ instance.name }}</option
+	<div class="controls">
+		<ul class="interactive-controls-sliders">
+			<label for="interactive-controls-instances-select">Weights</label>
+			<select
+				id="interactive-controls-instances-select"
+				class="interactive-controls-instances"
 			>
-			{% endfor %}
-		</select>
-	</div>
+				{% for instance in instances %}
+				<option value="{{ instance.axes | json_stringify | escape }}"
+					>{{ instance.name }}</option
+				>
+				{% endfor %}
+			</select>
+		</ul>
 
+		<div id="myBtnContainer">
+			<button class="btn active" id="align-left">
+				<span hidden id="toggle-left-align">Align left</span>
+				<svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>paragraph-left-align</title><line class="a" x1="0.75" y1="2.998" x2="21.75" y2="2.998"/><line class="a" x1="0.75" y1="7.498" x2="18.75" y2="7.498"/><line class="a" x1="0.75" y1="11.998" x2="23.25" y2="11.998"/><line class="a" x1="0.75" y1="16.498" x2="18.75" y2="16.498"/><line class="a" x1="0.75" y1="20.998" x2="21.75" y2="20.998"/></svg>
+			</button>
+
+			<button class="btn" id="align-centre">
+				<span hidden id="toggle-left-centre">Align centre</span>
+				<svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>paragraph-center-align</title><line class="a" x1="2.241" y1="2.998" x2="21.741" y2="2.998"/><line class="a" x1="5.241" y1="7.498" x2="18.741" y2="7.498"/><line class="a" x1="0.741" y1="11.998" x2="23.241" y2="11.998"/><line class="a" x1="5.241" y1="16.498" x2="18.741" y2="16.498"/><line class="a" x1="2.241" y1="20.998" x2="21.741" y2="20.998"/></svg>
+			</button>
+
+			<button class="btn" id="align-right">
+				<span hidden id="toggle-left-centre">Align right</span>
+				<svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>paragraph-right-align</title><line class="a" x1="23" y1="2.998" x2="2" y2="2.998"/><line class="a" x1="23" y1="7.498" x2="5" y2="7.498"/><line class="a" x1="23" y1="11.998" x2="0.5" y2="11.998"/><line class="a" x1="23" y1="16.498" x2="5" y2="16.498"/><line class="a" x1="23" y1="20.998" x2="2" y2="20.998"/></svg>
+			</button>
+		</div>
+
+		<ul class="interactive-controls-sliders">
+			<li>
+				<label for="interactive-controls-line-height">Line height</label>
+				<input
+					type="range"
+					min="0.8"
+					max="2"
+					value="1.1"
+					name="line-height"
+					id="interactive-controls-line-height"
+					step="0.05"
+					class="interactive-controls-slider"
+				/>
+			</li>
+			<li>
+				<label for="interactive-controls-fontsize">Size</label>
+				<input
+					type="range"
+					min="9"
+					max="92"
+					value="48"
+					name="font-size"
+					id="interactive-controls-fontsize"
+					step="any"
+					class="interactive-controls-slider"
+				/>
+			</li>
+		</ul>
+
+		<label for="interactive-controls-sliders">Variable axis</label>
+		<ul class="interactive-controls-sliders">
+			
+			{% for axis in axes %}
+			<li>
+				<label for="axis-{{ axis.axis }}">{{ axis.name }}</label>
+				<input
+					type="range"
+					min="{{ axis.min }}"
+					max="{{ axis.max }}"
+					value="{{ axis.default }}"
+					name="{{ axis.axis }}"
+					id="axis-{{ axis.axis }}"
+					step="{{ axis.step | default: 0.1 }}"
+					class="interactive-controls-slider"
+				/>
+			</li>
+			{% endfor %}
+		</ul>
+
+		
+	</div>
 	<div id="preview" class="interactive-controls-text" contenteditable="true">
 		<h1>
-			Let's see if it's the length of something that shows up the
-			line-height as a range slider, but maybe not
+			Everyone has the right to freedom of movement and residence within the borders of each state
 		</h1>
-		<p></p>
-		<p></p>
 	</div>
 </div>

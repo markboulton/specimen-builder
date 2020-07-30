@@ -12,22 +12,20 @@ layout: default.html
 </div>
 
 <main>
-	{% include masthead.html %}
-
-	<hr />
-
-	{% include interactive-controls.html %}
-
-	<hr />
-
-	{% include specimen.html %}
-
-	<hr />
-
-	{% include setting.html %}
-
-	<hr />
-
-	{% include character-grid.html %}
-
+	{% include navigation.html %}
+	<div class="container">
+		{% include masthead.html %}
+	</div>
+	<div class="container">
+		{% include interactive-controls.html %}
+	</div>
+	<div class="container">
+		{% include specimen.html %}
+	</div>
+	<div class="container">
+		{% include setting.html %}
+	</div>
+	<div class="container">
+		{% include character-grid.html %}
+	</div>
 </main>
