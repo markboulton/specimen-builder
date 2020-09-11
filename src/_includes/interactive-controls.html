@@ -63,7 +63,7 @@
 
 		<label for="interactive-controls-sliders">Variable axis</label>
 		<ul class="interactive-controls-sliders">
-			
+
 			{% for axis in axes %}
 			<li>
 				<label for="axis-{{ axis.axis }}">{{ axis.name }}</label>
@@ -81,9 +81,8 @@
 			{% endfor %}
 		</ul>
 
-		
 	</div>
-	<div id="preview" class="interactive-controls-text" contenteditable="true">
+	<div id="preview" class="interactive-controls-text {{ fontclass }}" contenteditable="true">
 		<h1>
 			{{ content.tester }}
 		</h1>
