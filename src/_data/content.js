@@ -1,14 +1,14 @@
 module.exports = {
-	typeface: "Recursive",
+	typeface: "Klarheit Grotesk",
 
 	// Masthead
 	poster: "Gg Ss",
 
 	// Meta
-	link: "https://www.recursive.design",
-	published: "2019",
-	about: "The Recursive project is led by Arrow Type, a type design foundry based in Brooklyn, USA. To contribute, see https://github.com/arrowtype/recursive. Check out the Recursive homepage at http://recursive.design",
-	designers: "Arrow Type, Stephen Nixon",
+	link: "https://extraset.ch/typefaces/klarheit-grotesk/",
+	published: "2020",
+	about: "Oscillating between two major standards, Klarheit Grotesk seeks to meet the requirements of a more contemporary form of modernism. The project features a formula that revisits geometrical solutions drawn from the Bauhaus movement as well as key typographic standards used in 1960s Swiss modernism.",
+	designers: "Extraset",
 	language: [
 		{
 			property: "Extended Latin",
@@ -29,7 +29,7 @@ module.exports = {
 	],
 
 	// Tester
-	tester: "Everyone has the right to freedom of movement and residence within the borders of each state",
+	tester: "Schaulager Basel, Dark Tinted Quality Glass Panels Ref. 07.542.136.80 & Muffled Walls for Art Spaces Soundproofing.",
 
 	// Specimen
 	specimen1: "BORN FREE",
