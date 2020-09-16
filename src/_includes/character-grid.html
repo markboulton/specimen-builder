@@ -1,9 +1,20 @@
 <div class="container-glyphs p-3u {{ fontclass }}">
-	<ol class="character-grid">
-		{% for char in charset %}
-		<li>{{ char }}</li>
-		{% endfor %}
-	</ol>
+	{% for font in fonts %}
+		<!--
+		Draw a grid with the characters of the first font.
+		-->
+		<ol class="character-grid-list">
+			{% for char in font[1].charset %}
+			<li>{{ char }}</li>
+			{% endfor %}
+		</ol>
+
+		<!--
+		Break out of this loop, as the only need the
+		first font to fill out character grid with.
+		-->
+		{% break %}
+	{% endfor %}
 	<div class="container-preview">
 		<div class="character-grid-zoom sticky">
 			A

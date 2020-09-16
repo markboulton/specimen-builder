@@ -30,7 +30,7 @@ ol {
 	text-align: center;
 }
 
-.character-grid {
+.character-grid-list {
 	grid-area: preview;
 	list-style-type: none;
 	padding: 0;
@@ -47,7 +47,7 @@ ol {
 	background: var(--background);
 }
 
-.character-grid > li {
+.character-grid-list > li {
 	height: var(--character-grid-cell);
 	display: flex;
 	justify-content: center;
@@ -56,7 +56,7 @@ ol {
 	border-right: 1px solid var(--grey-dark);
 }
 
-.character-grid > li:hover {
+.character-grid-list > li:hover {
 	cursor: pointer;
 	background-color: var(--grey-light);
 }
