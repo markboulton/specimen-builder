@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import "./assets.js";
-import { fontName } from "./font";
+import { fontNames } from "./fonts.js";
 import FontFaceObserver from "fontfaceobserver";
 
 const fontTimeOut = 5000; // In milliseconds
@@ -36,14 +36,19 @@ const throttle = (fn, wait) => {
 };
 
 // Set up FontFaceObserver
-const font = new FontFaceObserver(fontName);
-font.load(null, fontTimeOut).then(
+let observers = [];
+for (const fontName of fontNames) {
+	const font = new FontFaceObserver(fontName);
+	observers.push(font.load(null, fontTimeOut));
+}
+
+Promise.all(observers).then(
 	() => {
-		// Font has loaded
+		// All fonts have loaded
 		document.documentElement.classList.add("fonts-loaded");
 	},
 	() => {
-		// Font didn't load
+		// One or more fonts didn't load
 		document.documentElement.classList.add("fonts-failed");
 	}
 );
@@ -91,7 +96,7 @@ for (const interactive of interactives) {
 		};
 	}
 
-	
+
 
 	// Alignment controls for type tester
 	// Add active class to the current button (highlight it)

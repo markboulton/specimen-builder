@@ -12,6 +12,12 @@ layout: default.html
 </div>
 
 <main>
+
+	{% assign fontclass = "recursive-sanslinearlight" %}
+	{% assign axes = fonts["recursive-sanslinearlight"]["axes"] %}
+	{% assign instances = fonts["recursive-sanslinearlight"]["instances"] %}
+	{% assign charset = fonts["recursive-sanslinearlight"]["charset"] %}
+
 	{% include navigation.html %}
 	<div class="container">
 		{% include masthead.html %}
