@@ -61,25 +61,26 @@
 			</li>
 		</ul>
 
-		<label for="interactive-controls-sliders">Variable axis</label>
-		<ul class="interactive-controls-sliders">
-
-			{% for axis in axes %}
-			<li>
-				<label for="axis-{{ axis.axis }}">{{ axis.name }}</label>
-				<input
-					type="range"
-					min="{{ axis.min }}"
-					max="{{ axis.max }}"
-					value="{{ axis.default }}"
-					name="{{ axis.axis }}"
-					id="axis-{{ axis.axis }}"
-					step="{{ axis.step | default: 0.1 }}"
-					class="interactive-controls-slider"
-				/>
-			</li>
-			{% endfor %}
-		</ul>
+		{% if axes %}
+			<label>Variable axis</label>
+			<ul class="interactive-controls-sliders">
+				{% for axis in axes %}
+				<li>
+					<label for="axis-{{ axis.axis }}">{{ axis.name }}</label>
+					<input
+						type="range"
+						min="{{ axis.min }}"
+						max="{{ axis.max }}"
+						value="{{ axis.default }}"
+						name="{{ axis.axis }}"
+						id="axis-{{ axis.axis }}"
+						step="{{ axis.step | default: 0.1 }}"
+						class="interactive-controls-slider"
+					/>
+				</li>
+				{% endfor %}
+			</ul>
+		{% endif %}
 
 	</div>
 	<div id="preview" class="interactive-controls-text {{ fontclass }}" contenteditable="true">
