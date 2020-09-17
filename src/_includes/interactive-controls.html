@@ -1,19 +1,21 @@
 <div class="interactive-controls">
 
 	<div class="controls">
-		<div class="interactive-controls-container">
-			<label for="interactive-controls-instances-select">Weights</label>
-			<select
-				id="interactive-controls-instances-select"
-				class="interactive-controls-instances"
-			>
-				{% for instance in instances %}
-				<option value="{{ instance.axes | json_stringify | escape }}"
-					>{{ instance.name }}</option
+		{% if axes %}
+			<div class="interactive-controls-container">
+				<label for="interactive-controls-instances-select">Instances</label>
+				<select
+					id="interactive-controls-instances-select"
+					class="interactive-controls-instances"
 				>
-				{% endfor %}
-			</select>
-		</div>
+					{% for instance in instances %}
+					<option value="{{ instance.axes | json_stringify | escape }}"
+						>{{ instance.name }}</option
+					>
+					{% endfor %}
+				</select>
+			</div>
+		{% endif %}
 
 		<div id="myBtnContainer" class="interactive-controls-container">
 			<button class="btn active" id="align-left">
