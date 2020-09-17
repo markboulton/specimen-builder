@@ -437,3 +437,13 @@ input[type="range"]:focus::-ms-fill-upper {
 	transition-property: color, background-color;
 	transition-timing-function: ease;
 }
+
+/* Character grid */
+
+.character-grid h3 {
+	font-family: var(--font-system);
+	font-size: 0.7rem;
+	color: var(--grey-mid);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}

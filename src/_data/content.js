@@ -1,14 +1,14 @@
 module.exports = {
-	typeface: "Klarheit Grotesk",
+	typeface: "Recursive",
 
 	// Masthead
 	poster: "Gg Ss",
 
 	// Meta
-	link: "https://extraset.ch/typefaces/klarheit-grotesk/",
+	link: "https://www.recursive.design",
 	published: "2020",
-	about: "Oscillating between two major standards, Klarheit Grotesk seeks to meet the requirements of a more contemporary form of modernism. The project features a formula that revisits geometrical solutions drawn from the Bauhaus movement as well as key typographic standards used in 1960s Swiss modernism.",
-	designers: "Extraset",
+	about: "Recursive is typographic palette for UI & code. It draws inspiration from single-stroke casual, a style of brush writing used in signpainting that is stylistically flexible and warmly energetic. Recursive adapts this aesthetic basis into an extensive variable font family, designed to excel in digital interactive environments, including data-rich user interfaces, technical documentation, and code editors.",
+	designers: "Arrow Type, Stephen Nixon",
 	language: [
 		{
 			property: "Extended Latin",

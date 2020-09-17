@@ -1,0 +1,37 @@
+[
+    {
+        "axis": "MONO",
+        "name": "Monospace",
+        "min": 0,
+        "max": 1,
+        "default": 0
+    },
+    {
+        "axis": "CASL",
+        "name": "Casual",
+        "min": 0,
+        "max": 1,
+        "default": 0
+    },
+    {
+        "axis": "wght",
+        "name": "Weight",
+        "min": 300,
+        "max": 1000,
+        "default": 300
+    },
+    {
+        "axis": "slnt",
+        "name": "Slant",
+        "min": -15,
+        "max": 0,
+        "default": 0
+    },
+    {
+        "axis": "CRSV",
+        "name": "Cursive",
+        "min": 0,
+        "max": 1,
+        "default": 0.5
+    }
+]
