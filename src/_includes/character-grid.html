@@ -1,19 +1,44 @@
 <div class="container-glyphs p-3u {{ fontclass }}">
 	{% for font in fonts %}
-		<!--
-		Draw a grid with the characters of the first font.
-		-->
-		<ol class="character-grid-list">
-			{% for char in font[1].charset %}
-			<li>{{ char }}</li>
+		<div class="character-grid {{ font[0] }}">
+			<!--
+			Draw a grid with the characters of the first font.
+			-->
+			{% for set in font[1].charset %}
+				<!--
+				Skip the separators, we're not interested in those.
+				-->
+				{% if set.category == "Separator" %}
+					{% continue %}
+				{% endif %}
+				<!--
+				Create a title based on (sub)category and script.
+				-->
+				<h3>
+					{{ set.category }}
+					{% if set.subCategory %}
+						{{ set.subCategory }}
+					{% endif %}
+					{% if set.script %}
+						{{ set.script | capitalize }}
+					{% endif %}
+				</h3>
+				<!--
+				Print each char in this category
+				-->
+				<ol class="character-grid-list">
+				{% for char in set.chars %}
+					<li>&#x{{ char }};</li>
+				{% endfor %}
+				</ol>
 			{% endfor %}
-		</ol>
-
+			<div class="character-grid-zoom"></div>
+		</div>
 		<!--
 		Break out of this loop, as the only need the
 		first font to fill out character grid with.
 		-->
-		{% break %}
+	{% break %}
 	{% endfor %}
 	<div class="container-preview">
 		<div class="character-grid-zoom sticky">
