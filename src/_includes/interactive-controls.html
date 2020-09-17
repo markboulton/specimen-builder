@@ -78,7 +78,7 @@
 			</li>
 		</ul>
 
-		{% if axes %}
+		{% if axes and axes.length != 0 %}
 			<label>Variable axis</label>
 			<ul class="interactive-controls-sliders">
 				{% for axis in axes %}
