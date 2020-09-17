@@ -4,11 +4,6 @@
 	--character-grid-gap: 0;
 }
 
-.sticky {
-	position: sticky;
-	top: 0;
-}
-
 ol {
 	margin: 0;
 	padding: 0;
@@ -16,18 +11,29 @@ ol {
 
 .container-glyphs {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
 	gap: 1px 1px;
-	grid-template-areas: "glyphs preview ";
+	grid-template-areas: "glyphs preview";
+	position: relative;
 }
 
-.character-grid-zoom {
-	grid-area: glyphs;
+.character-grid-zoom-container {
+	pointer-events: none;
+	position: sticky;
+	top: 0;
 	background: var(--background);
 	font-size: 28vw;
-	padding: 2vw;
 	text-align: center;
+}
+
+.container-preview {
+	grid-area: glyphs;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 .character-grid {
