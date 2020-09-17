@@ -151,10 +151,9 @@ if ("IntersectionObserver" in window) {
 
 // Character grid
 const grid = document.querySelector(".character-grid");
-const gridlist = document.querySelector(".character-grid-list");
 const gridzoom = document.querySelector(".character-grid-zoom");
 const gridtoggle = document.querySelector(".character-grid-toggle");
-gridlist.onmousemove = throttle(e => {
+grid.onmousemove = throttle(e => {
 	if (e.target.tagName === "LI") {
 		gridzoom.innerHTML = e.target.innerHTML;
 	}
