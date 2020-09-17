@@ -30,8 +30,11 @@ ol {
 	text-align: center;
 }
 
-.character-grid-list {
+.character-grid {
 	grid-area: preview;
+}
+
+.character-grid-list {
 	list-style-type: none;
 	padding: 0;
 	display: grid;
