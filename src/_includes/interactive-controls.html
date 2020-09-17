@@ -1,7 +1,7 @@
 <div class="interactive-controls">
 
 	<div class="controls">
-		{% if axes %}
+		{% if axes and axes.length != 0 %}
 			<div class="interactive-controls-container">
 				<label for="interactive-controls-instances-select">Instances</label>
 				<select
@@ -15,6 +15,21 @@
 					{% endfor %}
 				</select>
 			</div>
+		{% else %}
+		<div class="interactive-controls-container">
+			<label for="interactive-controls-instances-select">Family</label>
+			<select
+				id="interactive-controls-instances-select"
+				class="interactive-controls-instances"
+			>
+				{% for font in fonts %}
+				<option value="{{ font[0] }}"
+					>{{ font[0] }}</option
+				>
+				{% endfor %}
+			</select>
+		</div>
+
 		{% endif %}
 
 		<div id="myBtnContainer" class="interactive-controls-container">
