@@ -2,6 +2,10 @@
 	--label-width: 7em;
 }
 
+.interactive-controls-container {
+	margin: 1rem 0;
+}
+
 .interactive-controls-text {
 	font-size: calc(var(--font-size) * 1px);
 	line-height: var(--line-height);
@@ -10,6 +14,7 @@
 .interactive-controls-instances,
 .interactive-controls-sliders li {
 	display: flex;
+	align-items: center;
 }
 
 .interactive-controls label {
