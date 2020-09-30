@@ -76,10 +76,10 @@
 			</li>
 		</ul>
 
-		{% if axes and axes.length != 0 %}
+		{% if fonts[main_selector].axes.length != 0 %}
 			<label>Variable axis</label>
 			<ul class="interactive-controls-sliders">
-				{% for axis in axes %}
+				{% for axis in fonts[mainfont_id].axes %}
 				<li>
 					<label for="axis-{{ axis.axis }}">{{ axis.name }}</label>
 					<input
@@ -96,9 +96,8 @@
 				{% endfor %}
 			</ul>
 		{% endif %}
-
 	</div>
-	<div class="interactive-controls-text {{ fontclass }}" contenteditable="true">
+	<div class="interactive-controls-text {{ main_selector }}" contenteditable="true">
 		<h1>
 			{{ content.tester }}
 		</h1>
