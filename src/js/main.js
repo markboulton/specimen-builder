@@ -107,14 +107,14 @@ for (const interactive of interactives) {
 
 	// Alignment controls for type tester
 	// Add active class to the current button (highlight it)
-	const btnContainer = interactive.querySelector(
+	const buttonContainer = interactive.querySelector(
 		".interactive-controls-buttons"
 	);
-	const btns = btnContainer.querySelectorAll(".btn");
-	for (const btn of btns) {
-		btn.addEventListener("click", function() {
+	const buttons = buttonContainer.querySelectorAll("button");
+	for (const button of buttons) {
+		button.addEventListener("click", function() {
 			// Update button class
-			btnContainer.querySelector(".active").classList.remove("active");
+			buttonContainer.querySelector(".active").classList.remove("active");
 			this.classList.add("active");
 			// Apply new alignment
 			area.classList.remove("align-left", "align-centre", "align-right");

@@ -242,24 +242,6 @@ button {
 	cursor: pointer;
 }
 
-.btn {
-	padding: 8px 8px 5px 8px;
-	color: var(--text);
-	transition-property: color, background-color;
-	transition-timing-function: ease;
-	transition-duration: 200ms;
-}
-
-.btn svg {
-	width: 18px;
-	fill: currentColor;
-	transition: fill 200ms ease;
-}
-
-.btn.active {
-	background: var(--grey-mid);
-}
-
 /* Preview layout */
 .interactive-controls {
 	display: grid;
@@ -288,6 +270,24 @@ button {
 .interactive-controls label {
 	font-size: 0.8rem;
 	font-weight: 400;
+}
+
+.interactive-controls-buttons button {
+	padding: 8px 8px 5px 8px;
+	color: var(--text);
+	transition-property: color, background-color;
+	transition-timing-function: ease;
+	transition-duration: 200ms;
+}
+
+.interactive-controls-buttons button svg {
+	width: 18px;
+	fill: currentColor;
+	transition: fill 200ms ease;
+}
+
+.interactive-controls-buttons button.active {
+	background: var(--grey-mid);
 }
 
 /* Range slider */
@@ -433,7 +433,7 @@ input[type="range"]:focus::-ms-fill-upper {
 	padding-left: 1vw;
 }
 
-.button {
+.faux-button {
 	background-color: var(--text);
 	display: inline-block;
 	padding: 1em 3em;
@@ -442,15 +442,15 @@ input[type="range"]:focus::-ms-fill-upper {
 	text-decoration: none;
 	font-weight: 600;
 	border: 1px solid var(--background);
+	transition-duration: 200ms;
+	transition-property: color, background-color, border;
+	transition-timing-function: ease;
 }
 
-.button:hover {
+.faux-button:hover {
 	background-color: var(--background);
 	color: var(--text);
 	border: 1px solid var(--text);
-	transition-duration: 200ms;
-	transition-property: color, background-color;
-	transition-timing-function: ease;
 }
 
 /* Character grid */
