@@ -13,10 +13,11 @@
 // limitations under the License.
 
 import "./assets.js";
-import { fontData } from "./fonts.js";
+import fontData from "../_data/fontdata.json";
 import FontFaceObserver from "fontfaceobserver";
 
 const fontTimeOut = 5000; // In milliseconds
+const fontClasses = fontData.map(f => f.selector);
 
 // Generic: throttle
 const throttle = (fn, wait) => {
@@ -57,6 +58,7 @@ Promise.all(observers).then(
 const interactives = document.querySelectorAll(".interactive-controls");
 for (const interactive of interactives) {
 	const area = interactive.querySelector(".interactive-controls-text");
+	const styles = interactive.querySelector(".interactive-controls-styles");
 	const sliders = interactive.querySelectorAll(
 		".interactive-controls-slider"
 	);
@@ -96,39 +98,29 @@ for (const interactive of interactives) {
 		};
 	}
 
-	// Alignment controls for type tester
-	// Add active class to the current button (highlight it)
-	var btnContainer = document.getElementById("myBtnContainer");
-	var btns = btnContainer.getElementsByClassName("btn");
-	for (var i = 0; i < btns.length; i++) {
-		btns[i].addEventListener("click", function() {
-			var current = document.getElementsByClassName("active");
-			current[0].className = current[0].className.replace(" active", "");
-			this.className += " active";
-		});
+	if (styles) {
+		styles.onchange = e => {
+			area.classList.remove(...fontClasses);
+			area.classList.add(e.target.value);
+		};
 	}
 
-	var alignButtonLeft = document.getElementById("align-left");
-	alignButtonLeft.addEventListener("click", function() {
-		document
-			.getElementById("preview")
-			.classList.remove("align-right", "align-centre");
-		document.getElementById("preview").classList.add("align-left");
-	});
-	var alignButtonRight = document.getElementById("align-right");
-	alignButtonRight.addEventListener("click", function() {
-		document
-			.getElementById("preview")
-			.classList.remove("align-left", "align-centre");
-		document.getElementById("preview").classList.add("align-right");
-	});
-	var alignButtonCentre = document.getElementById("align-centre");
-	alignButtonCentre.addEventListener("click", function() {
-		document
-			.getElementById("preview")
-			.classList.remove("align-left", "align-right");
-		document.getElementById("preview").classList.add("align-centre");
-	});
+	// Alignment controls for type tester
+	// Add active class to the current button (highlight it)
+	const buttonContainer = interactive.querySelector(
+		".interactive-controls-buttons"
+	);
+	const buttons = buttonContainer.querySelectorAll("button");
+	for (const button of buttons) {
+		button.addEventListener("click", function() {
+			// Update button class
+			buttonContainer.querySelector(".active").classList.remove("active");
+			this.classList.add("active");
+			// Apply new alignment
+			area.classList.remove("align-left", "align-centre", "align-right");
+			area.classList.add(this.value);
+		});
+	}
 }
 
 // Watch if .am-i-in-view elements are visible on screen
@@ -159,7 +151,6 @@ grid.onmousemove = throttle(e => {
 	}
 }, 100);
 if (gridtoggle) {
-	const fontClasses = fontData.map(f => f.class);
 	gridtoggle.onchange = e => {
 		grid.classList.remove(...fontClasses);
 		grid.classList.add(e.target.value);
