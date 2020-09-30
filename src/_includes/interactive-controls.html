@@ -32,18 +32,18 @@
 
 		{% endif %}
 
-		<div id="myBtnContainer" class="interactive-controls-container">
-			<button class="btn active" id="align-left">
+		<div class="interactive-controls-container interactive-controls-buttons">
+			<button type="button" class="btn active" value="align-left">
 				<span hidden id="toggle-left-align">Align left</span>
 				<svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>paragraph-left-align</title><line class="a" x1="0.75" y1="2.998" x2="21.75" y2="2.998"/><line class="a" x1="0.75" y1="7.498" x2="18.75" y2="7.498"/><line class="a" x1="0.75" y1="11.998" x2="23.25" y2="11.998"/><line class="a" x1="0.75" y1="16.498" x2="18.75" y2="16.498"/><line class="a" x1="0.75" y1="20.998" x2="21.75" y2="20.998"/></svg>
 			</button>
 
-			<button class="btn" id="align-centre">
+			<button type="button" class="btn" value="align-centre">
 				<span hidden id="toggle-left-centre">Align centre</span>
 				<svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>paragraph-center-align</title><line class="a" x1="2.241" y1="2.998" x2="21.741" y2="2.998"/><line class="a" x1="5.241" y1="7.498" x2="18.741" y2="7.498"/><line class="a" x1="0.741" y1="11.998" x2="23.241" y2="11.998"/><line class="a" x1="5.241" y1="16.498" x2="18.741" y2="16.498"/><line class="a" x1="2.241" y1="20.998" x2="21.741" y2="20.998"/></svg>
 			</button>
 
-			<button class="btn" id="align-right">
+			<button type="button" class="btn" value="align-right">
 				<span hidden id="toggle-left-centre">Align right</span>
 				<svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>paragraph-right-align</title><line class="a" x1="23" y1="2.998" x2="2" y2="2.998"/><line class="a" x1="23" y1="7.498" x2="5" y2="7.498"/><line class="a" x1="23" y1="11.998" x2="0.5" y2="11.998"/><line class="a" x1="23" y1="16.498" x2="5" y2="16.498"/><line class="a" x1="23" y1="20.998" x2="2" y2="20.998"/></svg>
 			</button>
@@ -100,7 +100,7 @@
 		{% endif %}
 
 	</div>
-	<div id="preview" class="interactive-controls-text {{ fontclass }}" contenteditable="true">
+	<div class="interactive-controls-text {{ fontclass }}" contenteditable="true">
 		<h1>
 			{{ content.tester }}
 		</h1>

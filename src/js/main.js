@@ -107,37 +107,20 @@ for (const interactive of interactives) {
 
 	// Alignment controls for type tester
 	// Add active class to the current button (highlight it)
-	var btnContainer = document.getElementById("myBtnContainer");
-	var btns = btnContainer.getElementsByClassName("btn");
-	for (var i = 0; i < btns.length; i++) {
-		btns[i].addEventListener("click", function() {
-			var current = document.getElementsByClassName("active");
-			current[0].className = current[0].className.replace(" active", "");
-			this.className += " active";
+	const btnContainer = interactive.querySelector(
+		".interactive-controls-buttons"
+	);
+	const btns = btnContainer.querySelectorAll(".btn");
+	for (const btn of btns) {
+		btn.addEventListener("click", function() {
+			// Update button class
+			btnContainer.querySelector(".active").classList.remove("active");
+			this.classList.add("active");
+			// Apply new alignment
+			area.classList.remove("align-left", "align-centre", "align-right");
+			area.classList.add(this.value);
 		});
 	}
-
-	var alignButtonLeft = document.getElementById("align-left");
-	alignButtonLeft.addEventListener("click", function() {
-		document
-			.getElementById("preview")
-			.classList.remove("align-right", "align-centre");
-		document.getElementById("preview").classList.add("align-left");
-	});
-	var alignButtonRight = document.getElementById("align-right");
-	alignButtonRight.addEventListener("click", function() {
-		document
-			.getElementById("preview")
-			.classList.remove("align-left", "align-centre");
-		document.getElementById("preview").classList.add("align-right");
-	});
-	var alignButtonCentre = document.getElementById("align-centre");
-	alignButtonCentre.addEventListener("click", function() {
-		document
-			.getElementById("preview")
-			.classList.remove("align-left", "align-right");
-		document.getElementById("preview").classList.add("align-centre");
-	});
 }
 
 // Watch if .am-i-in-view elements are visible on screen
