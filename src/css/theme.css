@@ -27,6 +27,10 @@ main {
 	padding: 0 3vw;
 }
 
+a {
+	color: inherit;
+}
+
 /* Container: Setting */
 
 .container {
