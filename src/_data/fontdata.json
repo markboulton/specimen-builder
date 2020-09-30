@@ -1,13 +1,8 @@
 [
 	{
-		"name": "NotoSansThai-Black",
-		"selector": "notosansthai-black",
-		"style": "black"
-	},
-	{
-		"name": "NotoSansThai-Bold",
-		"selector": "notosansthai-bold",
-		"style": "bold"
+		"name": "NotoSansThai-Thin",
+		"selector": "notosansthai-thin",
+		"style": "thin"
 	},
 	{
 		"name": "NotoSansThai-Light",
@@ -30,18 +25,13 @@
 		"style": "semibold bold"
 	},
 	{
-		"name": "NotoSansThai-Thin",
-		"selector": "notosansthai-thin",
-		"style": "thin"
-	},
-	{
-		"name": "NotoSansThaiUI-Black",
-		"selector": "notosansthaiui-black",
-		"style": "black"
-	},
-	{
-		"name": "NotoSansThaiUI-Bold",
-		"selector": "notosansthaiui-bold",
+		"name": "NotoSansThai-Bold",
+		"selector": "notosansthai-bold",
 		"style": "bold"
+	},
+	{
+		"name": "NotoSansThai-Black",
+		"selector": "notosansthai-black",
+		"style": "black"
 	}
 ]
