@@ -4878,9 +4878,9 @@ is-buffer@^2.0.0, is-buffer@^2.0.2:
   integrity sha512-Kq1rokWXOPXWuaMAqZiJW4XxsmD9zGx9q4aePabbn3qCRGedtH7Cm+zV8WETitMfu1wdh+Rvd6w5egwSngUX2A==
 
 is-callable@^1.1.4, is-callable@^1.2.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.2.1.tgz#4d1e21a4f437509d25ce55f8184350771421c96d"
-  integrity sha512-wliAfSzx6V+6WfMOmus1xy0XvSgf/dlStkvTfq7F0g4bOIW0PSUbnyse3NhDwdyYS1ozfUtAAySqTws3z9Eqgg==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.2.2.tgz#c7c6715cd22d4ddb48d3e19970223aceabb080d9"
+  integrity sha512-dnMqspv5nU3LoewK2N/y7KLtxtakvTuaCsU9FU50/QDmdbHNy/4/JuRtMHqRU22o3q+W89YQndQEeCVwK+3qrA==
 
 is-color-stop@^1.0.0:
   version "1.1.0"
@@ -7217,10 +7217,19 @@ postcss-values-parser@^1.5.0:
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
-postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.23, postcss@^7.0.25, postcss@^7.0.26, postcss@^7.0.27, postcss@^7.0.32, postcss@^7.0.4, postcss@^7.0.5, postcss@^7.0.6, postcss@^7.0.7:
+postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.23, postcss@^7.0.26, postcss@^7.0.27, postcss@^7.0.32, postcss@^7.0.4, postcss@^7.0.5, postcss@^7.0.6, postcss@^7.0.7:
   version "7.0.32"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.32.tgz#4310d6ee347053da3433db2be492883d62cec59d"
   integrity sha512-03eXong5NLnNCD05xscnGKGDZ98CyzoqPSMjOe6SuoQY7Z2hIj0Ld1g/O/UQRuOle2aRtiIRDg9tDcTGAkLfKw==
+  dependencies:
+    chalk "^2.4.2"
+    source-map "^0.6.1"
+    supports-color "^6.1.0"
+
+postcss@^7.0.25:
+  version "7.0.35"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.35.tgz#d2be00b998f7f211d8a276974079f2e92b970e24"
+  integrity sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg==
   dependencies:
     chalk "^2.4.2"
     source-map "^0.6.1"
@@ -8514,7 +8523,7 @@ specificity@^0.4.1:
 
 "specimen-skeleton-support@https://github.com/kabisa/specimen-skeleton-support.git#master":
   version "1.0.0"
-  resolved "https://github.com/kabisa/specimen-skeleton-support.git#2898fdc0c3e888b300617254c61f5f2c09c13377"
+  resolved "https://github.com/kabisa/specimen-skeleton-support.git#33a0e910156fd6a15656c249a66236be8c402bb0"
   dependencies:
     fontkit "^1.8.0"
     postcss "^7.0.25"
