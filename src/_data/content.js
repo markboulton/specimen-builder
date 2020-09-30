@@ -1,41 +1,29 @@
 module.exports = {
-	typeface: "Recursive",
+	typeface: "Noto Thai",
 
 	// Masthead
 	poster: "Gg Ss",
 
 	// Meta
-	link: "https://www.recursive.design",
+	link: "https://noto-website-2.storage.googleapis.com/pkgs/NotoSansThai-unhinted.zip",
 	published: "2020",
-	about: "Recursive is typographic palette for UI & code. It draws inspiration from single-stroke casual, a style of brush writing used in signpainting that is stylistically flexible and warmly energetic. Recursive adapts this aesthetic basis into an extensive variable font family, designed to excel in digital interactive environments, including data-rich user interfaces, technical documentation, and code editors.",
-	designers: "Arrow Type, Stephen Nixon",
+	about: "Google has been developing a font family called Noto, which aims to support all languages with a harmonious look and feel. Noto is Google’s answer to tofu. The name noto is to convey the idea that Google’s goal is to see “no more tofu”. Noto has multiple styles and weights, and is freely available to all.",
+	designers: "Author name",
 	language: [
 		{
-			property: "Extended Latin",
-			content: ""
-		},
-		{
-			property: "Greek",
-			content: ""
-		},
-		{
-			property: "Cyrillic",
-			content: ""
-		},
-		{
-			property: "Arabic",
+			property: "Thai",
 			content: ""
 		}
 	],
 
 	// Tester
-	tester: "Schaulager Basel, Dark Tinted Quality Glass Panels Ref. 07.542.136.80 & Muffled Walls for Art Spaces Soundproofing.",
+	tester: "ายสังฆภัณฑ์ เฮงพิทักษ์ฝั่ง ผู้เฒ่าซึ่งมีอาชีพเป็นฅนขายฃวด ถูกตำรวจปฏิบัติการจับฟ้องศาล ฐานลักนาฬิกาคุณหญิงฉัตรชฎา ฌานสมาธิ[",
 
 	// Specimen
-	specimen1: "BORN FREE",
-	specimen2: "Construção",
-	specimen3: "Nineteen Eighty-Four, often published as 1984",
-	specimen4: "Doublethink means the power of holding two contradictory beliefs in one’s mind simultaneously, and accepting",
+	specimen1: "หน่วยงาน",
+	specimen2: "ความแหลม",
+	specimen3: "ถือสองความเชื่อที่ขัดแย้งกันไว้ในใจ",
+	specimen4: "หมายถึงพลังของการถือสองความเชื่อที่ขัดแย้งกันไว้ในใจพร้อมกันและยอมรับ",
 
 	// Setting
 	setting1: "Everyone has the right to life",
