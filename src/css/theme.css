@@ -6,10 +6,8 @@ html {
 	--grey-dark: #666;
 	--text: var(--dark);
 	--background: var(--light);
-	--font-system: 'Inter', sans-serif;
+	--font-system: "Inter", sans-serif;
 }
-
-
 
 html[data-dark-mode="true"] {
 	--text: var(--light);
@@ -55,19 +53,38 @@ main {
 	padding: 0;
 }
 
-
 /* Spacing utility classes */
-.m-1u {margin-top: 1rem;}
-.m-2u {margin-top: 2rem;}
-.m-3u {margin-top: 3rem;}
-.m-4u {margin-top: 4rem;}
-.m-5u {margin-top: 5rem;}
+.m-1u {
+	margin-top: 1rem;
+}
+.m-2u {
+	margin-top: 2rem;
+}
+.m-3u {
+	margin-top: 3rem;
+}
+.m-4u {
+	margin-top: 4rem;
+}
+.m-5u {
+	margin-top: 5rem;
+}
 
-.p-1u {padding-top: 1rem;}
-.p-2u {padding-top: 2rem;}
-.p-3u {padding-top: 3rem;}
-.p-4u {padding-top: 4rem;}
-.p-5u {padding-top: 5rem;}
+.p-1u {
+	padding-top: 1rem;
+}
+.p-2u {
+	padding-top: 2rem;
+}
+.p-3u {
+	padding-top: 3rem;
+}
+.p-4u {
+	padding-top: 4rem;
+}
+.p-5u {
+	padding-top: 5rem;
+}
 
 /* Typesetting utility classes */
 .italic {
@@ -113,7 +130,7 @@ main {
 	font-size: clamp(1.3rem, 1.6vw, 1.8rem);
 }
 .type-m {
-	font-size: clamp(1.2rem, 1.4vw, 1.6rem) 
+	font-size: clamp(1.2rem, 1.4vw, 1.6rem);
 }
 .type-s {
 	font-size: 0.8rem;
@@ -216,18 +233,6 @@ main {
 }
 
 /* Button styles */
-.btn {
-	padding: 8px 8px 5px 8px;
-}
-
-.active {
-	background: var(--grey-mid);
-}
-
-.active a {
-	color: var(--grey-mid);
-}
-
 button {
 	padding: 0.5rem;
 	border: none;
@@ -235,13 +240,25 @@ button {
 	color: inherit;
 	background-color: transparent;
 	cursor: pointer;
-  }
-  
-  button svg {
-	transition: all 200ms ease;
-	fill: var(--text);
-  }
+}
 
+.btn {
+	padding: 8px 8px 5px 8px;
+	color: var(--text);
+	transition-property: color, background-color;
+	transition-timing-function: ease;
+	transition-duration: 200ms;
+}
+
+.btn svg {
+	width: 18px;
+	fill: currentColor;
+	transition: fill 200ms ease;
+}
+
+.btn.active {
+	background: var(--grey-mid);
+}
 
 /* Preview layout */
 .interactive-controls {
@@ -265,7 +282,7 @@ button {
 }
 
 [contenteditable] {
-	outline: 0px solid transparent;
+	outline: 0 solid transparent;
 }
 
 .interactive-controls label {
@@ -291,11 +308,11 @@ input[type="range"]::-webkit-slider-runnable-track {
 	height: 1px;
 	cursor: pointer;
 	background: var(--text);
-	border-radius: 0px;
-	border: 0px solid var(--text);
+	border-radius: 0;
+	border: 0 solid var(--text);
 }
 input[type="range"]::-webkit-slider-thumb {
-	box-shadow: 0px 0px 0px var(--text);
+	box-shadow: 0 0 0 var(--text);
 	border: 3px solid var(--background);
 	height: 17px;
 	width: 17px;
@@ -336,36 +353,35 @@ input[type="range"]::-ms-track {
 }
 
 input[type="range"]::-ms-fill-lower {
-	background: #000000;
-	border: 0px solid #000000;
-	border-radius: 0px;
-	box-shadow: 0px 0px 0px #000000;
+	background: #000;
+	border: 0 solid #000;
+	border-radius: 0;
+	box-shadow: 0 0 0 #000;
 }
 input[type="range"]::-ms-fill-upper {
-	background: #000000;
-	border: 0px solid #000000;
-	border-radius: 0px;
-	box-shadow: 0px 0px 0px #000000;
+	background: #000;
+	border: 0 solid #000;
+	border-radius: 0;
+	box-shadow: 0 0 0 #000;
 }
 input[type="range"]::-ms-thumb {
 	margin-top: 1px;
-	box-shadow: 0px 0px 0px #000000;
-	border: 0px solid #000000;
+	box-shadow: 0 0 0 #000;
+	border: 0 solid #000;
 	height: 20px;
 	width: 20px;
 	border-radius: 10px;
-	background: #000000;
+	background: #000;
 	cursor: pointer;
 }
 input[type="range"]:focus::-ms-fill-lower {
-	background: #000000;
+	background: #000;
 }
 input[type="range"]:focus::-ms-fill-upper {
-	background: #000000;
+	background: #000;
 }
 
-
-/* Cursor 
+/* Cursor
 
 .interactive-controls-text h1 span::after {
 	content: "";
@@ -380,13 +396,13 @@ input[type="range"]:focus::-ms-fill-upper {
 	-webkit-animation: blink 1s step-end infinite;
 	animation: blink 1s step-end infinite;
   }
-  
+
   @-webkit-keyframes blink {
 	0% { opacity: 1.0; }
 	50% { opacity: 0.0; }
 	100% { opacity: 1.0; }
   }
-  
+
   @keyframes blink {
 	0% { opacity: 1.0; }
 	50% { opacity: 0.0; }
@@ -394,7 +410,6 @@ input[type="range"]:focus::-ms-fill-upper {
   }
 
   */
-  
 
 /* Masthead */
 
