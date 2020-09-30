@@ -2,7 +2,7 @@ module.exports = {
 	typeface: "Noto Thai",
 
 	// Masthead
-	poster: "Gg Ss",
+	poster: "ษ์ พ ซึ่",
 
 	// Meta
 	link: "https://noto-website-2.storage.googleapis.com/pkgs/NotoSansThai-unhinted.zip",
