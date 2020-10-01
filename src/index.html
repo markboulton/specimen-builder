@@ -13,10 +13,8 @@ layout: default.html
 
 <main>
 
-	{% assign fontclass = "recursive-sanslinearlight" %}
-	{% assign axes = fonts["recursive-sanslinearlight"]["axes"] %}
-	{% assign instances = fonts["recursive-sanslinearlight"]["instances"] %}
-	{% assign charset = fonts["recursive-sanslinearlight"]["charset"] %}
+	{% assign main_id = 3 %}
+	{% assign main_selector = fontdata[main_id].selector %}
 
 	{% include navigation.html %}
 	<div class="container">

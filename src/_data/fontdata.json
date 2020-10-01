@@ -1,7 +1,37 @@
 [
 	{
-		"name": "recursive-sanslinearlight",
-		"selector": "recursive-sanslinearlight",
-		"style": "unknown"
+		"name": "NotoSansThai-Thin",
+		"selector": "notosansthai-thin",
+		"style": "thin"
+	},
+	{
+		"name": "NotoSansThai-Light",
+		"selector": "notosansthai-light",
+		"style": "light"
+	},
+	{
+		"name": "NotoSansThai-Medium",
+		"selector": "notosansthai-medium",
+		"style": "medium"
+	},
+	{
+		"name": "NotoSansThai-Regular",
+		"selector": "notosansthai-regular",
+		"style": "regular"
+	},
+	{
+		"name": "NotoSansThai-SemiBold",
+		"selector": "notosansthai-semibold",
+		"style": "semibold bold"
+	},
+	{
+		"name": "NotoSansThai-Bold",
+		"selector": "notosansthai-bold",
+		"style": "bold"
+	},
+	{
+		"name": "NotoSansThai-Black",
+		"selector": "notosansthai-black",
+		"style": "black"
 	}
 ]

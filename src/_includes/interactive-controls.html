@@ -1,35 +1,36 @@
 <div class="interactive-controls">
 
 	<div class="controls">
-		{% if axes and axes.length != 0 %}
+		{% if fonts[main_selector].instances.length != 0 %}
 			<div class="interactive-controls-container">
 				<label for="interactive-controls-instances-select">Instances</label>
 				<select
 					id="interactive-controls-instances-select"
 					class="interactive-controls-instances"
 				>
-					{% for instance in instances %}
-					<option value="{{ instance.axes | json_stringify | escape }}"
-						>{{ instance.name }}</option
-					>
+					{% for instance in fonts[mainfont_id].instances %}
+					<option value="{{ instance.axes | json_stringify | escape }}">
+						{{ instance.name }}
+					</option>
 					{% endfor %}
 				</select>
 			</div>
-		{% else %}
-		<div class="interactive-controls-container">
-			<label for="interactive-controls-instances-select">Family</label>
-			<select
-				id="interactive-controls-instances-select"
-				class="interactive-controls-instances"
-			>
-				{% for font in fontdata %}
+		{% endif %}
+
+		{% if fontdata.length >= 2 %}
+			<div class="interactive-controls-container">
+				<label for="interactive-controls-instances-select">Styles</label>
+				<select
+					id="interactive-controls-instances-select"
+					class="interactive-controls-styles"
+				>
+					{% for font in fontdata %}
 					<option value="{{ font.selector }}" {% if font.selector == main_selector %}selected{% endif %}>
 						{{ font.style }}
 					</option>
 					{% endfor %}
-			</select>
-		</div>
-
+				</select>
+			</div>
 		{% endif %}
 
 		<div class="interactive-controls-container interactive-controls-buttons">
@@ -75,10 +76,10 @@
 			</li>
 		</ul>
 
-		{% if axes and axes.length != 0 %}
+		{% if fonts[main_selector].axes.length != 0 %}
 			<label>Variable axis</label>
 			<ul class="interactive-controls-sliders">
-				{% for axis in axes %}
+				{% for axis in fonts[mainfont_id].axes %}
 				<li>
 					<label for="axis-{{ axis.axis }}">{{ axis.name }}</label>
 					<input
@@ -95,9 +96,8 @@
 				{% endfor %}
 			</ul>
 		{% endif %}
-
 	</div>
-	<div class="interactive-controls-text {{ fontclass }}" contenteditable="true">
+	<div class="interactive-controls-text {{ main_selector }}" contenteditable="true">
 		<h1>
 			{{ content.tester }}
 		</h1>
