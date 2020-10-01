@@ -2,7 +2,7 @@ module.exports = {
 	typeface: "Noto Thai",
 
 	// Masthead
-	poster: "ษ์ พ ซึ่",
+	poster: "ทักษ์ฝั่",
 
 	// Meta
 	link:
@@ -11,12 +11,9 @@ module.exports = {
 	about:
 		"Google has been developing a font family called Noto, which aims to support all languages with a harmonious look and feel. Noto is Google’s answer to tofu. The name noto is to convey the idea that Google’s goal is to see “no more tofu”. Noto has multiple styles and weights, and is freely available to all.",
 	designers: "Author name",
-	language: [
-		{
-			property: "Thai",
-			content: ""
-		}
-	],
+	coverage: "8 languages across 4 regions",
+	language:
+		"Northern Khmer, Kuy, Eastern Lawa, Western Lawa, Pali (Thai script), Northeastern Thai, Southern Thai, Thai",
 
 	// Tester
 	tester:
