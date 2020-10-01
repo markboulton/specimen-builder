@@ -22,11 +22,11 @@
 				id="interactive-controls-instances-select"
 				class="interactive-controls-instances"
 			>
-				{% for font in fonts %}
-				<option value="{{ font[0] }}"
-					>{{ font[0] }}</option
-				>
-				{% endfor %}
+				{% for font in fontdata %}
+					<option value="{{ font.selector }}" {% if font.selector == main_selector %}selected{% endif %}>
+						{{ font.style }}
+					</option>
+					{% endfor %}
 			</select>
 		</div>
 
