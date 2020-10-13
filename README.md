@@ -1,7 +1,29 @@
+<h1 align="center">Specimen Builder</h1>
+
+Specimen Builder is a quick and easy way to build digital type specimens. It uses <a href="#specimen-skeleton"></a>Specimen Skeleton</a> as a base and builds on top of it with a theme design and some configuration.
+
+This project requires Node.js >= 12 and [yarn](https://yarnpkg.com/).
+
+To get started, run the following commands from the root of the repo:
+
+- `yarn install`
+
+Workflow:
+
+1. Add your font files to the src/fonts directory. They must be in woff2 format.
+2. Run `yarn fontdata`
+3. If you are generating a specimen from multiple font files, change the order of the fonts that have been generated in src/_data/fontdata.json
+4. Edit the site configuration in src/_data/site.js
+5. Edit the content configuration in src/_data/content.js
+6. If you'd like to change the colours, edit the variables in src/css/theme.css
+7. `yarn start` - this will start the local development server, view at http://localhost:8080.
+
+<hr />
+
 <p align="center">
 	<img width="320" height="320" src="https://user-images.githubusercontent.com/4570664/74532263-0db14500-4f2f-11ea-96e9-49bcb8699ebb.png">
 </p>
-<h1 align="center">Specimen Skeleton</h1>
+<h2 id="specimen-skeleton">About Specimen Skeleton</h2>
 
 ## Project setup & development
 
