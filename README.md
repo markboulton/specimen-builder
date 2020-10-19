@@ -71,7 +71,7 @@ Note: this can be repurposed for lazy loading images, pausing video, etc.
 ## More about Specimen Skeleton
 
 <p align="center">
-	<img width="120" height="120" src="https://user-images.githubusercontent.com/4570664/74532263-0db14500-4f2f-11ea-96e9-49bcb8699ebb.png">
+	<img width="175" height="175" src="https://user-images.githubusercontent.com/4570664/74532263-0db14500-4f2f-11ea-96e9-49bcb8699ebb.png">
 </p>
 
 Specimen Skeleton is an [Eleventy-based](https://www.11ty.dev/) specimen _boilerplate_. It helps you get a basic site up and running quickly, and offers you a few interactive elements to build your demos from.
