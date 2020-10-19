@@ -40,6 +40,9 @@ Specimen Builder provides some simple utility classes in the design token CSS �
 - Line height. `.lh08` to `.lh14` represent line height values 0.8 to 1.4.
 - Alignment. `.align-centre`, `.align-left`, `.align-justify`, `.align-right`.
 
+#### Reading direction
+If producing specimens for languages that read right to left, you need to edit the default layout file in `src/_layouts_/default.html`. At the top of the document, add `dir="rtl"` to the `HTML` element so it reads `<html dir="rtl">`.
+
 [Specimen Skeleton](https://github.com/kabisa/specimen-skeleton) – the foundation on which Specimen Builder is built – provides us with some useful tools to extend the specimens even further:
 
 #### Using assets
@@ -61,9 +64,6 @@ In CSS, point to the file using the path relative to your CSS file:
 `background-image: url(../img/my_logo.svg);`
 
 In CSS, images below 8 KB will be inlined automatically. To force inlined or external, append `?inline` or `?external` respectively, e.g. `url(../img/my_logo.svg?external);`. Inlining in HTML files
-
-#### Reading direction
-If producing specimens for languages that read right to left, you need to edit the default layout file in `src/_layouts_/default.html`. At the top of the document, add `dir="rtl"` to the `HTML` element so it reads `<html dir="rtl">`.
 
 #### Am I in view?
 
