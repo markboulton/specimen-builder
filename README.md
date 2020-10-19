@@ -1,14 +1,19 @@
 <h1 align="center">Specimen Builder</h1>
 
-Specimen Builder is a quick and easy way to build digital type specimens. It uses <a href="#specimen-skeleton"></a>Specimen Skeleton</a> as a base and builds on top of it with a theme design and some configuration.
+Specimen Builder is a quick and easy way to build digital type specimens. It uses [Specimen Skeleton](https://github.com/kabisa/specimen-skeleton) as a base and builds on top of it with a theme design and some configuration.
 
-This project requires Node.js >= 12 and [yarn](https://yarnpkg.com/).
+The design rationale for the design comes from several months of design research into the effectiveness of digital type specimens. [You can read the final report of that research here](https://typespecimens.xyz/journal/specimen-research-insights/).
 
+### Requirements
+- This project requires Node.js >= 12 and [yarn](https://yarnpkg.com/).
+- It builds from *woff2* font files, either individual font files or variable fonts.
+
+### Getting started
 To get started, run the following commands from the root of the repo:
 
 - `yarn install`
 
-Workflow:
+#### Workflow:
 
 1. Add your font files to the src/fonts directory. They must be in woff2 format.
 2. Run `yarn fontdata`
