@@ -74,6 +74,6 @@ Note: this can be repurposed for lazy loading images, pausing video, etc.
 	<img width="175" height="175" src="https://user-images.githubusercontent.com/4570664/74532263-0db14500-4f2f-11ea-96e9-49bcb8699ebb.png">
 </p>
 
-Specimen Skeleton is an [Eleventy-based](https://www.11ty.dev/) specimen _boilerplate_. It helps you get a basic site up and running quickly, and offers you a few interactive elements to build your demos from.
+[Specimen Skeleton](https://github.com/kabisa/specimen-skeleton) is an [Eleventy-based](https://www.11ty.dev/) specimen _boilerplate_. It helps you get a basic site up and running quickly, and offers you a few interactive elements to build your demos from.
 
 It will analyse your variable font and generate the CSS necessary _and_ all the sliders, so you'll hit the ground running!
