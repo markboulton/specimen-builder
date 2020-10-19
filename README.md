@@ -27,17 +27,17 @@ To get started, run the following commands from the root of the repo:
 
 ### Extending Specimen Builder
 
-You can extend the functionality of the specimens produced using Specimen Builder by simply editing the content or CSS. However, Specimen Skeleton – the foundaiton on which Specimen Builder is built – provides us with some useful tools to extend the specimens even further.
+You can extend the functionality of the specimens produced using Specimen Builder by simply editing the content or CSS. However, Specimen Skeleton – the foundation on which Specimen Builder is built – provides us with some useful tools to extend the specimens even further.
 
 #### Design tokens
 
 Specimen Builder provides some simple utility classes in the design token CSS – `src/css/theme.css` – to fine-tune your typesetting. The following classes are available:
 
-– Colours: Colours are available as CSS variables. Be mindful of the dark mode, and please ensure you provide sympathetic dark alternatives for every additional colour used.
-– Spacing: Specimen Builder provides em-based spacing units with the classes `.m-1u`, `.m-2u`, and `.p-1u`, `.p-2u` etc. Where u = 1em, m = margin, and p = padding.
-– Font weight. Several typesetting classes are available. eg `.italic`
-– Font size: A large range of em-based font sizes are available from `type-3xs`, to `.type-8xl`.
-– Line height. `.lh08` to `.lh14` represent line height values 0.8 to 1.4.
+- Colours: Colours are available as CSS variables. Be mindful of the dark mode, and please ensure you provide sympathetic dark alternatives for every additional colour used.
+- Spacing: Specimen Builder provides em-based spacing units with the classes `.m-1u`, `.m-2u`, and `.p-1u`, `.p-2u` etc. Where u = 1em, m = margin, and p = padding.
+- Font weight. Several typesetting classes are available. eg `.italic`
+- Font size: A large range of em-based font sizes are available from `type-3xs`, to `.type-8xl`.
+- Line height. `.lh08` to `.lh14` represent line height values 0.8 to 1.4.
 - Alignment. `.align-centre`, `.align-left`, `.align-justify`, `.align-right`.
 
 #### Using assets
