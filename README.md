@@ -27,7 +27,7 @@ To get started, run the following commands from the root of the repo:
 
 ### Extending Specimen Builder
 
-You can extend the functionality of the specimens produced using Specimen Builder by simply editing the content or CSS. However, Specimen Skeleton – the foundation on which Specimen Builder is built – provides us with some useful tools to extend the specimens even further.
+You can extend the functionality of the specimens produced using Specimen Builder by simply editing the content or CSS. 
 
 #### Design tokens
 
@@ -39,6 +39,8 @@ Specimen Builder provides some simple utility classes in the design token CSS �
 - Font size: A large range of em-based font sizes are available from `type-3xs`, to `.type-8xl`.
 - Line height. `.lh08` to `.lh14` represent line height values 0.8 to 1.4.
 - Alignment. `.align-centre`, `.align-left`, `.align-justify`, `.align-right`.
+
+[Specimen Skeleton](https://github.com/kabisa/specimen-skeleton) – the foundation on which Specimen Builder is built – provides us with some useful tools to extend the specimens even further:
 
 #### Using assets
 
