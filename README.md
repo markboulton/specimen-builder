@@ -15,7 +15,7 @@ To get started, run the following commands from the root of the repo:
 
 ### Workflow
 
-1. Add your font files to the src/fonts directory. They must be in woff2 format.
+1. Add your font files to the `src/fonts` directory. They must be in woff2 format.
 2. Run `yarn fontdata`
 3. If you are generating a specimen from multiple font files, change the order of the fonts that have been generated in `src/_data/fontdata.json`
 4. Edit the site configuration in `src/_data/site.js`
@@ -59,6 +59,9 @@ In CSS, point to the file using the path relative to your CSS file:
 `background-image: url(../img/my_logo.svg);`
 
 In CSS, images below 8 KB will be inlined automatically. To force inlined or external, append `?inline` or `?external` respectively, e.g. `url(../img/my_logo.svg?external);`. Inlining in HTML files
+
+#### Reading direction
+If producing specimens for languages that read right to left, you need to edit the default layout file in `src/_layouts_/default.html`. At the top of the document, add `dir="rtl"` to the `HTML` element so it reads `<html dir="rtl">`.
 
 #### Am I in view?
 

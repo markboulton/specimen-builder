@@ -387,36 +387,6 @@ input[type="range"]:focus::-ms-fill-upper {
 	background: #000;
 }
 
-/* Cursor
-
-.interactive-controls-text h1 span::after {
-	content: "";
-	position: relative;
-	top: 10px;
-	right: -15px;
-	display: inline-block;
-	background-color: #606060;
-	vertical-align: top;
-	width: 0.5rem;
-	height: calc(var(--font-size) * 2px);
-	-webkit-animation: blink 1s step-end infinite;
-	animation: blink 1s step-end infinite;
-  }
-
-  @-webkit-keyframes blink {
-	0% { opacity: 1.0; }
-	50% { opacity: 0.0; }
-	100% { opacity: 1.0; }
-  }
-
-  @keyframes blink {
-	0% { opacity: 1.0; }
-	50% { opacity: 0.0; }
-	100% { opacity: 1.0; }
-  }
-
-  */
-
 /* Masthead */
 
 .masthead {
