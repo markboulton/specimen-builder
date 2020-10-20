@@ -27,9 +27,29 @@ To get started, run the following commands from the root of the repo:
 
 <hr />
 
+### Information architecture
+
+The specimen produced by this tool has vertically stacked 'containers', from top to bottom, they are:
+1. *Navigation*. Containing the Light/Dark toggle.
+2. *Masthead*. Containing critical information regarding the typeface, in addition to large evaluative glyphs and a call to action to download the font.
+3. *Interactive Controls*. An important container for user evaluation. These controls automatically generate sliders and drop downs from either individual font files, or from variable font axis. Simple typesetting tools are available for the user to change alignment, size, and line height.
+4. *Specimen*. Containing several single words set in varying weights. These should be individualised per font.
+5. *Setting*. A container to demonstrate long-form content at various dense settings at sizes.
+6. *Character Grid*. A comprehensive categorised list of all characters within the fonts together with a large size preview.
+7. *Language*. A container displaying a list of supported languages.
+
+HTML files in `src/_includes/` correspond to each container.
+
+<hr />
+
 ### Extending Specimen Builder
 
 You can extend the functionality of the specimens produced using Specimen Builder by simply editing the content or CSS. 
+
+#### Font styles
+
+When you ran `yarn fontdata`, Specimen Skeleton (remember: the system that is the foundation for Specimen Builder) produced font styles in a css file in `_src/css/font.css`. These can be used as utility classes for typesetting the 'specimen' or 'setting' containers.
+
 
 #### Design tokens
 
