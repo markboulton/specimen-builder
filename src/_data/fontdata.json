@@ -1,7 +1,22 @@
 [
 	{
-		"name": "Inter.var",
-		"selector": "inter",
-		"style": "unknown"
+		"name": "STIX2Text-Bold",
+		"selector": "stixtwotext-bold",
+		"style": "bold"
+	},
+	{
+		"name": "STIX2Text-BoldItalic",
+		"selector": "stixtwotext-bolditalic",
+		"style": "italic bold"
+	},
+	{
+		"name": "STIX2Text-Italic",
+		"selector": "stixtwotext-italic",
+		"style": "italic"
+	},
+	{
+		"name": "STIX2Text-Regular",
+		"selector": "stixtwotext",
+		"style": "regular"
 	}
 ]
