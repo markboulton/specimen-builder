@@ -6,7 +6,7 @@ These styles define the character grid container css
 
 :root {
 	--character-grid-cell: 4rem;
-	--character-grid-font-zize: 3rem;
+	--character-grid-font-zize: 2rem;
 	--character-grid-gap: 0;
 }
 
