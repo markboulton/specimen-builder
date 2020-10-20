@@ -39,7 +39,7 @@ const throttle = (fn, wait) => {
 // Set up FontFaceObserver
 let observers = [];
 for (const fd of fontData) {
-	const font = new FontFaceObserver(fd.name);
+	const font = new FontFaceObserver(fd.selector);
 	observers.push(font.load(null, fontTimeOut));
 }
 
