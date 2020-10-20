@@ -3,10 +3,10 @@ module.exports = {
 	description:
 		"A design built on top of Specimen Skeleton, based on research insights into effective digital type specimens.", // The description of your type specimen.
 
-	typeface: "Noto Sans", // The name of the typeface you are building
+	typeface: "STIX fonts", // The name of the typeface you are building
 	about:
-		"Noto is a font family comprising over 100 individual fonts, which are together designed to cover all the scripts encoded in the Unicode standard.", // All about the typeface
-	designers: "Steve Matteson", // And who designed it
+		"The mission of the Scientific and Technical Information Exchange (STIX) font creation project is the preparation of a comprehensive set of fonts that serve the scientific and engineering community in the process from manuscript creation through final publication, both in electronic and print formats.", // All about the typeface
+	designers: "Tiro Typeworks", // And who designed it
 
 	// More info: https://css-tricks.com/essential-meta-tags-social-media/
 	metatags: [

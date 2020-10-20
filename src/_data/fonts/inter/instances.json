@@ -1,0 +1,128 @@
+[
+	{
+		"name": "Thin",
+		"axes": {
+			"wght": 100,
+			"slnt": 0
+		}
+	},
+	{
+		"name": "Thin Italic",
+		"axes": {
+			"wght": 100,
+			"slnt": -10
+		}
+	},
+	{
+		"name": "Extra Light",
+		"axes": {
+			"wght": 200,
+			"slnt": 0
+		}
+	},
+	{
+		"name": "Extra Light Italic",
+		"axes": {
+			"wght": 200,
+			"slnt": -10
+		}
+	},
+	{
+		"name": "Light",
+		"axes": {
+			"wght": 300,
+			"slnt": 0
+		}
+	},
+	{
+		"name": "Light Italic",
+		"axes": {
+			"wght": 300,
+			"slnt": -10
+		}
+	},
+	{
+		"name": "Regular",
+		"axes": {
+			"wght": 400,
+			"slnt": 0
+		}
+	},
+	{
+		"name": "Italic",
+		"axes": {
+			"wght": 400,
+			"slnt": -10
+		}
+	},
+	{
+		"name": "Medium",
+		"axes": {
+			"wght": 500,
+			"slnt": 0
+		}
+	},
+	{
+		"name": "Medium Italic",
+		"axes": {
+			"wght": 500,
+			"slnt": -10
+		}
+	},
+	{
+		"name": "Semi Bold",
+		"axes": {
+			"wght": 600,
+			"slnt": 0
+		}
+	},
+	{
+		"name": "Semi Bold Italic",
+		"axes": {
+			"wght": 600,
+			"slnt": -10
+		}
+	},
+	{
+		"name": "Bold",
+		"axes": {
+			"wght": 700,
+			"slnt": 0
+		}
+	},
+	{
+		"name": "Bold Italic",
+		"axes": {
+			"wght": 700,
+			"slnt": -10
+		}
+	},
+	{
+		"name": "Extra Bold",
+		"axes": {
+			"wght": 800,
+			"slnt": 0
+		}
+	},
+	{
+		"name": "Extra Bold Italic",
+		"axes": {
+			"wght": 800,
+			"slnt": -10
+		}
+	},
+	{
+		"name": "Black",
+		"axes": {
+			"wght": 900,
+			"slnt": 0
+		}
+	},
+	{
+		"name": "Black Italic",
+		"axes": {
+			"wght": 900,
+			"slnt": -10
+		}
+	}
+]
