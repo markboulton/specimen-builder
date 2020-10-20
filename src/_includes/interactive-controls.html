@@ -8,7 +8,7 @@
 					id="interactive-controls-instances-select"
 					class="interactive-controls-instances"
 				>
-					{% for instance in fonts[mainfont_id].instances %}
+					{% for instance in fonts[main_selector].instances %}
 					<option value="{{ instance.axes | json_stringify | escape }}">
 						{{ instance.name }}
 					</option>
@@ -79,7 +79,7 @@
 		{% if fonts[main_selector].axes.length != 0 %}
 			<label>Variable axis</label>
 			<ul class="interactive-controls-sliders">
-				{% for axis in fonts[mainfont_id].axes %}
+				{% for axis in fonts[main_selector].axes %}
 				<li>
 					<label for="axis-{{ axis.axis }}">{{ axis.name }}</label>
 					<input
