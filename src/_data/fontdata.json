@@ -1,22 +1,22 @@
 [
 	{
-		"name": "STIX2Text-Bold",
-		"selector": "stixtwotext-bold",
-		"style": "bold"
-	},
-	{
-		"name": "STIX2Text-BoldItalic",
-		"selector": "stixtwotext-bolditalic",
-		"style": "italic bold"
+		"name": "STIX2Text-Regular",
+		"selector": "stixtwotext",
+		"style": "Regular"
 	},
 	{
 		"name": "STIX2Text-Italic",
 		"selector": "stixtwotext-italic",
-		"style": "italic"
+		"style": "Italic"
 	},
 	{
-		"name": "STIX2Text-Regular",
-		"selector": "stixtwotext",
-		"style": "regular"
+		"name": "STIX2Text-Bold",
+		"selector": "stixtwotext-bold",
+		"style": "Bold"
+	},
+	{
+		"name": "STIX2Text-BoldItalic",
+		"selector": "stixtwotext-bolditalic",
+		"style": "Italic bold"
 	}
 ]
