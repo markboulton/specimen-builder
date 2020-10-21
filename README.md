@@ -97,7 +97,7 @@ Note: this can be repurposed for lazy loading images, pausing video, etc.
 
 ## Converting ttf to woff2
 
-If you need to convert your font files to woff2, you can use this handy 
+If you need to compress your `.ttf` font files to `.woff2`, you can use this handy utility from Google
 
 https://github.com/google/woff2
 
