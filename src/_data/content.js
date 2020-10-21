@@ -5,7 +5,7 @@ module.exports = {
 	typeface: "STIX fonts",
 
 	// Masthead
-	poster: "Ψ℘ℂℜ",
+	poster: "Ψ℘ℜ",
 
 	// Meta
 	link: "https://www.stixfonts.org",
