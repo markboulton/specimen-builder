@@ -48,30 +48,26 @@ ol {
 
 .character-grid-list {
 	list-style-type: none;
-	padding: 0;
 	display: grid;
 	grid-template-columns: repeat(
 		auto-fill,
 		minmax(var(--character-grid-cell), 1fr)
 	);
-	column-gap: var(--character-grid-gap);
-	row-gap: var(--character-grid-gap);
+	gap: 1px;
 	font-size: var(--character-grid-font-zize);
-	border-left: 1px solid var(--grey-dark);
-	border-top: 1px solid var(--grey-dark);
 	background: var(--background);
 }
 
 .character-grid-list > li {
-	height: var(--character-grid-cell);
 	display: flex;
+	height: var(--character-grid-cell);
+	outline: 1px solid var(--grey-dark);
 	justify-content: center;
 	align-items: center;
-	border-bottom: 1px solid var(--grey-dark);
-	border-right: 1px solid var(--grey-dark);
 }
 
 .character-grid-list > li:hover {
 	cursor: pointer;
-	background-color: var(--grey-light);
+	background-color: var(--text);
+	color: var(--background);
 }
