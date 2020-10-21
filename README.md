@@ -95,6 +95,16 @@ Note: this can be repurposed for lazy loading images, pausing video, etc.
 
 <hr />
 
+## Converting ttf to woff2
+
+If you need to convert your font files to woff2, you can use this handy 
+
+https://github.com/google/woff2
+
+If you're using homebrew on a Mac, you can install it with `brew install woff2`. It'll give you the tools woff2_decompress and woff2_compress.
+
+Use this one liner to compress all .ttf fonts in the current directory: `for f in *.ttf; do woff2_compress $f; done`
+
 ## More about Specimen Skeleton
 
 <p align="center">
