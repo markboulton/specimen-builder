@@ -12,18 +12,30 @@ The design rationale for specimen builder comes from several months of design re
 To get started, run the following commands from the root of the repo:
 
 - `yarn install`
+- `yarn fontdata`
+- `yarn start`
 
-### Workflow
+### Workflow for adding your own fonts
 
-1. Add your font files to the `src/fonts` directory. They must be in woff2 format.
-2. Run `yarn fontdata`
-3. If you are generating a specimen from multiple font files, change the order of the fonts that have been generated in `src/_data/fontdata.json`.
-4. If you are using multiple font files, you can reorder the order in which the array has been generated in `src/_data/fontdata.json`. This will determine the order the font files will appear in the tester dropdown.
-5. Edit the site configuration in `src/_data/site.js`
-6. Edit the content configuration in `src/_data/content.js`
-7. If you'd like to change the colours, edit the variables in `src/css/theme.css`
-8. Assign main variable if using multiple `.woff2` files. In `index.html`, on line 16,  change the `main_id` variable number to the number in the array generated in `_data/fontdata.json`. This will determine the loading font in the type tester.
-9. `yarn start` - this will start the local development server, view at http://localhost:8080.
+#### Deleting the placeholder fonts
+- Delete the placegholder font files in `src/fonts`
+- Delete `src/_data/fontdata.json`
+- Delete the folder `src/_data/fonts`
+
+#### Deleting the placeholder fonts
+- Add your font files to the `src/fonts` directory. They must be in woff2 format.
+- Run `yarn fontdata`
+- If you are generating a specimen from multiple font files, change the order of the fonts that have been generated in `src/_data/fontdata.json`.
+- If you are using multiple font files, you can reorder the order in which the array has been generated in `src/_data/fontdata.json`. This will determine the order the font files will appear in the tester dropdown.
+
+#### Editing the placeholder content
+- Edit the site configuration in `src/_data/site.js`
+- Edit the content configuration in `src/_data/content.js`
+
+#### Changing the design
+- If you'd like to change the colours, edit the variables in `src/css/theme.css`
+- Assign main variable if using multiple `.woff2` files. In `index.html`, on line 16,  change the `main_id` variable number to the number in the array generated in `_data/fontdata.json`. This will determine the loading font in the type tester.
+- `yarn start` - this will start the local development server, view at http://localhost:8080.
 
 <hr />
 
