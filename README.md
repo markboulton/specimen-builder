@@ -22,7 +22,7 @@ To get started, run the following commands from the root of the repo:
 - Delete `src/_data/fontdata.json`
 - Delete the folder `src/_data/fonts`
 
-#### Deleting the placeholder fonts
+#### Add your own fonts
 - Add your font files to the `src/fonts` directory. They must be in woff2 format.
 - Run `yarn fontdata`
 - If you are generating a specimen from multiple font files, change the order of the fonts that have been generated in `src/_data/fontdata.json`.
