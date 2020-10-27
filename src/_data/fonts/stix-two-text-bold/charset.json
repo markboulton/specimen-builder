@@ -1463,5 +1463,11 @@
 		"subCategory": "Enclosing",
 		"script": null,
 		"chars": ["20DD", "20DE", "20DF", "20E4"]
+	},
+	{
+		"category": "Uncategorised",
+		"subCategory": null,
+		"script": null,
+		"chars": ["F6ED", "FB00", "FB03", "FB04"]
 	}
 ]
