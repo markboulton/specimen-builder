@@ -5,18 +5,23 @@
 	</div>
 
 	<div class="masthead-meta">
+	{% if content.link %}
 		<a href="{{ content.link }}" class="faux-button">Get {{ content.typeface }}</a>
-
+	{% endif %}
+	{% if content.about %}
 		<p>{{ content.about }}</p>
-
+	{% endif %}
+	{% if content.published %}
 		<h3>Published</h3>
 		<p>{{ content.published }}</p>
-
+	{% endif %}
+	{% if content.designers %}
 		<h3>Designers</h3>
 		<p>{{ content.designers }}</p>
-
+	{% endif %}
+	{% if content.coverage %}
 		<h3>Coverage</h3>
 		<p><a href="#coverage">{{ content.coverage }}</a></p>
-
+	{% endif %}
 	</div>
 </div>

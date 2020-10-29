@@ -1,4 +1,4 @@
-// Documentation for content
+// To remove a variable from the specimen, delete the whole variable not just the contents.
 
 module.exports = {
 	// Typeface name
