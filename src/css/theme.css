@@ -60,36 +60,68 @@ a {
 }
 
 /* Spacing utility classes */
-.m-1u {
+.mt-1u {
 	margin-top: 1rem;
 }
-.m-2u {
+.mt-2u {
 	margin-top: 2rem;
 }
-.m-3u {
+.mt-3u {
 	margin-top: 3rem;
 }
-.m-4u {
+.mt-4u {
 	margin-top: 4rem;
 }
-.m-5u {
+.mt-5u {
 	margin-top: 5rem;
 }
 
-.p-1u {
+.mb-1u {
+	margin-bottom: 1rem;
+}
+.mb-2u {
+	margin-bottom: 2rem;
+}
+.mb-3u {
+	margin-bottom: 3rem;
+}
+.mb-4u {
+	margin-bottom: 4rem;
+}
+.mb-5u {
+	margin-bottom: 5rem;
+}
+
+.pt-1u {
 	padding-top: 1rem;
 }
-.p-2u {
+.pt-2u {
 	padding-top: 2rem;
 }
-.p-3u {
+.pt-3u {
 	padding-top: 3rem;
 }
-.p-4u {
+.pt-4u {
 	padding-top: 4rem;
 }
-.p-5u {
+.pt-5u {
 	padding-top: 5rem;
+}
+
+.pb-1u {
+	padding-bottom: 1rem;
+}
+.pb-2u {
+	padding-bottom: 2rem;
+}
+.pb-3u {
+	padding-bottom: 3rem;
+}
+.pb-4u {
+	padding-bottom: 4rem;
+}
+.pb-5u {
+	padding-bottom: 5rem;
 }
 
 /* Typesetting utility classes */
@@ -437,4 +469,13 @@ input[type="range"]:focus::-ms-fill-upper {
 	color: var(--grey-mid);
 	text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+/* Language container */
+
+.language {
+	font-size: 0.8rem;
+	font-family: var(--font-system);
+	line-height: 1.3;
+	padding-left: 1vw;
 }
