@@ -1,3 +1,4 @@
+// Edit the variables set here to change the content of the default containers. They are ordered to match the order in the default specimen.
 // To remove a variable from the specimen, delete the whole variable not just the contents.
 
 module.exports = {
@@ -5,29 +6,29 @@ module.exports = {
 	typeface: "STIX fonts",
 
 	// Masthead
-	poster: "Ψ℘ℜ",
+	poster: "Ψ℘ℜ", // This appears as the three large glyphs at the top. Change this to a few interesting glyphs that summarise the typeface.
 
 	// Meta
-	link: "https://www.stixfonts.org",
+	link: "https://www.stixfonts.org", // This is the URL used for the button
 	published: "1995 – 2020",
 	about:
 		"The mission of the Scientific and Technical Information Exchange (STIX) font creation project is the preparation of a comprehensive set of fonts that serve the scientific and engineering community in the process from manuscript creation through final publication, both in electronic and print formats.",
 	designers: "Tiro Typeworks",
-	coverage: "Latin, Greek, & Cyrillic",
+	coverage: "Latin, Greek, & Cyrillic", // This populates the link that anchors to the list of languages.
 	language:
 		"Afrikaans, Albanian, Asturian, Basque, Bosnian, Breton, Catalan, Cebuano, Cornish, Corsican, Croatian, Czech, Danish, English, Esperanto, Estonian, Faroese, Faroese, Filipino, Finnish, Flemish, French, Frisian, Friulian, Gaelic, Galician, German, Greenlandic, Guarani, Haitian, Hawaiian, Hiligaynon, Hungarian, Icelandic, Igbo, Indonesian, Irish, Italian, Kurdish, Latin, Latvian, Lithuanian, Livonian, Luxembourgish, Malagasy, Malay, Maltese, Maori, Moldavian, Nederlands, Norwegian, Occitan, Polish, Portuguese, Provencal, Romanian, Romansch, Saami, Samoan, Scots, Scottish, Slovak, Slovenian, Spanish, Swahili, Swedish, Tagalog, Turkish, Walloon, Welsh, Wolof, Belarusian, Bulgarian, Macedonian, Moldavian, Russian, Serbian (Cyrillic), Ukrainian, Greek.",
 
-	// Tester
+	// Tester. This is the default text for the type tester.
 	tester: "Just keep examining every low bid quoted for zinc etchings.",
 
-	// Specimen
+	// Specimen. These are the four lines which are are set centred. The aim is to show different weights and styles, so choose content that is varied in nature.
 	specimen1: "BORN FREE",
 	specimen2: "Construção",
 	specimen3: "Nineteen Eighty-Four, often published as 1984",
 	specimen4:
 		"Doublethink means the power of holding two contradictory beliefs in one’s mind simultaneously, and accepting",
 
-	// Setting
+	// Setting. These four variables correspond to each block of text in the setting container.
 	setting1: "Everyone has the right to life",
 	setting2: "All human beings are born free and equal in dignity and rights.",
 	setting3:
