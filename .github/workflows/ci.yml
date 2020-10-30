@@ -30,9 +30,6 @@ jobs:
     - name: Install dependencies
       run: yarn install
 
-    - name: Test
-      run: yarn test
-
     - name: Build 11ty site
       run: yarn build
 
