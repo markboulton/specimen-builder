@@ -15,6 +15,8 @@ To get started, run the following commands from the root of the repo:
 - `yarn fontdata`
 - `yarn start`
 
+This will give you a basic specimen with the default content, configuration, and fonts.
+
 ### Workflow for adding your own fonts
 
 #### Deleting the placeholder fonts
@@ -67,15 +69,24 @@ When you ran `yarn fontdata`, Specimen Skeleton (remember: the system that is th
 
 Specimen Builder provides some simple utility classes in the design token CSS – `src/css/theme.css` – to fine-tune your typesetting. The following classes are available:
 
-- Colours: Colours are available as CSS variables. Be mindful of the dark mode, and please ensure you provide sympathetic dark alternatives for every additional colour used.
-- Spacing: Specimen Builder provides em-based spacing units with the classes `.m-1u`, `.m-2u`, and `.p-1u`, `.p-2u` etc. Where u = 1em, m = margin, and p = padding.
-- Font weight. Several typesetting classes are available. eg `.italic`
-- Font size: A large range of em-based font sizes are available from `type-3xs`, to `.type-8xl`.
-- Line height. `.lh08` to `.lh14` represent line height values 0.8 to 1.4.
-- Alignment. `.align-centre`, `.align-left`, `.align-justify`, `.align-right`.
+* Colours: Colours are available as CSS variables. Be mindful of the dark mode, and please ensure you provide sympathetic dark alternatives for every additional colour used.
+* Spacing: Specimen Builder provides em-based spacing units with the classes `.m-1u`, `.m-2u`, and `.p-1u`, `.p-2u` etc. Where u = 1em, m = margin, and p = padding.
+* Font weight. Several typesetting classes are available. eg `.italic`
+* Font size: A large range of em-based font sizes are available from `type-3xs`, to `.type-8xl`.
+* Line height. `.lh08` to `.lh14` represent line height values 0.8 to 1.4.
+* Alignment. `.align-centre`, `.align-left`, `.align-justify`, `.align-right`.
 
 #### Reading direction
-If producing specimens for languages that read right to left, you need to edit the default layout file in `src/_layouts_/default.html`. At the top of the document, add `dir="rtl"` to the `HTML` element so it reads `<html dir="rtl">`.
+If producing specimens for languages that read right to left, or top to bottom, you need to edit a variable in `_src/data/site.js` called 'direction' and change its value to either:
+
+* Left to right: "ltr"
+* Right to left: "rtl"
+* Left to right, top to bottom: "ltrttb"
+* Right to left, top to bottom: "rtlttb"
+
+These values will change the text blocks in each container.
+
+### Extending Specimen Builder even further!
 
 [Specimen Skeleton](https://github.com/kabisa/specimen-skeleton) – the foundation on which Specimen Builder is built – provides us with some useful tools to extend the specimens even further:
 
