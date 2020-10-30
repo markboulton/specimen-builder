@@ -27,12 +27,17 @@ This will give you a basic specimen with the default content, configuration, and
 #### Add your own fonts
 - Add your font files to the `src/fonts` directory. They must be in woff2 format.
 - Run `yarn fontdata`
-- If you are generating a specimen from multiple font files, change the order of the fonts that have been generated in `src/_data/fontdata.json`.
 - If you are using multiple font files, you can reorder the order in which the array has been generated in `src/_data/fontdata.json`. This will determine the order the font files will appear in the tester dropdown.
 
 #### Editing the placeholder content
 - Edit the site configuration in `src/_data/site.js`
 - Edit the content configuration in `src/_data/content.js`
+
+#### Editing the default 'main_id' variable
+- `main_id` is the variable that defines the font file for the whole specimen. It is defined in `src/ndex.html` in this line of code: `{% assign main_id = 0 %}`.
+- The '0' in this example corresponds to the first entry in the fontdata array in `src/_data/fontdata.json`.
+- To change the default font, simply change this variable to the item in the array starting with 0 for the first, 1 for the second etc.
+– So if I had an array of 8 font files, and I wanted my specimen to be in Regular – which is the fourth item in the array – then `main_id = 3`.
 
 #### Changing the design
 - If you'd like to change the colours, edit the variables in `src/css/theme.css`
