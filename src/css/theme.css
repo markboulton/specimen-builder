@@ -33,6 +33,27 @@ a {
 	color: inherit;
 }
 
+/* Reading direction utility classes */
+
+.ltr {
+	direction: ltr;
+}
+
+.rtl {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+}
+
+.ltrttb {
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+}
+
+.rtlttb {
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+}
+
 /* Container: Setting */
 
 .container {

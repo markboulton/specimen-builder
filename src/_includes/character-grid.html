@@ -1,6 +1,6 @@
 <div class="container-glyphs pb-3u pt-3u {{ main_selector }}">
 
-	<div class="character-grid {{ font[0] }}">
+	<div class="character-grid  {% include utilities/reading-direction-ltrrtl.html %} {{ font[0] }}">
 		{% for set in fonts[main_selector].charset %}
 			{% if set.category == "Separator" %}
 				{% continue %}

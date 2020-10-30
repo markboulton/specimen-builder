@@ -1,5 +1,14 @@
 module.exports = {
 	title: "Specimen Builder", // Edit this with the name of your type specimen
+
+	// This determines the reading direction of the text blocks and glyph table.
+	// Options:
+	// Left to right: "ltr"
+	// Right to left: "rtl"
+	// Left to right, top to bottom: "ltrttb"
+	// Right to left, top to bottom: "rtlttb"
+	direction: "ltr",
+
 	description:
 		"A design built on top of Specimen Skeleton, based on research insights into effective digital type specimens.", // The description of your type specimen.
 

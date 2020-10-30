@@ -3,7 +3,7 @@
 
 module.exports = {
 	// Masthead
-	poster: "Ψ℘ℜ", // This appears as the three large glyphs at the top. Change this to a few interesting glyphs that summarise the typeface.
+	poster: "abc", // This appears as the three large glyphs at the top. Change this to a few interesting glyphs that summarise the typeface. Ψ℘ℜ
 
 	// Tester. This is the default text for the type tester.
 	tester: "Just keep examining every low bid quoted for zinc etchings.",

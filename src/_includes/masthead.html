@@ -1,7 +1,7 @@
 <div class="masthead">
 	<div class="masthead-title {{ main_selector }}">
 		<h2 class="type-xl">{{ site.typeface }}</h2>
-		<p class="type-8xl">{{ content.poster }}</p>
+		<p class="{% include utilities/reading-direction.html %} type-8xl">{{ content.poster }}</p>
 	</div>
 
 	<div class="masthead-meta">

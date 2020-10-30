@@ -32,6 +32,7 @@
 				</select>
 			</div>
 		{% endif %}
+		
 
 		<div class="interactive-controls-container interactive-controls-buttons">
 			<button type="button" class="active" value="align-left" aria-label="Align left">
@@ -97,7 +98,7 @@
 			</ul>
 		{% endif %}
 	</div>
-	<div class="interactive-controls-text {{ main_selector }}" contenteditable="true">
+	<div class="interactive-controls-text {% include utilities/reading-direction.html %} {{ main_selector }}" contenteditable="true">
 		<h1>
 			{{ content.tester }}
 		</h1>
