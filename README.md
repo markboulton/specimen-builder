@@ -12,7 +12,6 @@ The design rationale for specimen builder comes from several months of design re
 To get started, run the following commands from the root of the repo:
 
 - `yarn install`
-- `yarn fontdata`
 - `yarn start`
 
 This will give you a basic specimen with the default content, configuration, and fonts.
