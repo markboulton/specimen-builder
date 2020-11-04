@@ -33,7 +33,7 @@ This will give you a basic specimen with the default content, configuration, and
 - Edit the content configuration in `src/_data/content.js`
 
 #### Editing the default 'main_id' variable
-- `main_id` is the variable that defines the font file for the whole specimen. It is defined in `src/ndex.html` in this line of code: `{% assign main_id = 0 %}`.
+- `main_id` is the variable that defines the font file for the whole specimen. It is defined in `src/index.html` in this line of code: `{% assign main_id = 0 %}`.
 - The '0' in this example corresponds to the first entry in the fontdata array in `src/_data/fontdata.json`.
 - To change the default font, simply change this variable to the item in the array starting with 0 for the first, 1 for the second etc.
 – So if I had an array of 8 font files, and I wanted my specimen to be in Regular – which is the fourth item in the array – then `main_id = 3`.
