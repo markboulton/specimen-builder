@@ -292,10 +292,17 @@ button {
 /* CONTAINER: Masthead */
 .masthead {
 	display: grid;
-	grid-template-columns: 4fr 1fr;
+	grid-template-columns: 3fr 1fr;
 	grid-template-rows: 1fr;
 	gap: 1px 1px;
 	grid-template-areas: "title meta";
+}
+
+/* Responsive layout styles */
+@media only screen and (max-width: 590px) {
+	.masthead {
+		display: inline-block;
+	}
 }
 
 .masthead-title {
@@ -342,10 +349,17 @@ button {
 /* Preview layout */
 .interactive-controls {
 	display: grid;
-	grid-template-columns: 4fr 1fr;
+	grid-template-columns: 3fr 1fr;
 	grid-template-rows: 1fr;
 	gap: 1px 1px;
 	grid-template-areas: "preview controls";
+}
+
+/* Responsive layout styles */
+@media only screen and (max-width: 590px) {
+	.interactive-controls {
+		display: inline-block;
+	}
 }
 
 .controls {
@@ -353,6 +367,13 @@ button {
 	border-left: 1px solid var(--text);
 	padding-left: 1vw;
 	font-family: var(--font-system);
+}
+
+/* Responsive layout styles */
+@media only screen and (max-width: 590px) {
+	.controls {
+		border: none;
+	}
 }
 
 .interactive-controls-text {
@@ -484,6 +505,13 @@ input[type="range"]:focus::-ms-fill-upper {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 2rem;
+}
+
+/* Responsive layout styles */
+@media only screen and (max-width: 590px) {
+	.setting {
+		display: inline-block;
+	}
 }
 
 .column-1 {

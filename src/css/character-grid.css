@@ -24,6 +24,14 @@ ol {
 	position: relative;
 }
 
+/* Responsive layout styles */
+@media only screen and (max-width: 590px) {
+	.container-glyphs {
+		display: block;
+		width: 94vw;
+	}
+}
+
 .character-grid-zoom-container {
 	pointer-events: none;
 	position: sticky;
@@ -31,6 +39,13 @@ ol {
 	background: var(--background);
 	font-size: 28vw;
 	text-align: center;
+}
+
+/* Responsive layout styles */
+@media only screen and (max-width: 590px) {
+	.character-grid-zoom-container {
+		display: none;
+	}
 }
 
 .container-preview {
