@@ -132,6 +132,15 @@ If you're using homebrew on a Mac, you can install it with `brew install woff2`.
 
 Use this one liner to compress all .ttf fonts in the current directory: `for f in *.ttf; do woff2_compress $f; done`
 
+## Content sources
+If you are creating specimens in multiple languages, you can use these resources for sourcing content:
+
+1. Rosetta's [Universal Specimen](https://universalspecimen.rosettatype.com)
+The Universal Specimen from Rosetta displays the Universal Declaraiton of Human Rights in multiple panels in 138 languages.
+
+2. Aksharamukha : [Script Converter](http://aksharamukha.appspot.com/texts/triratnanusmriti)
+This is an excellent resource for providing sample text – from old scriptures, or religious text – across many complex scripts and languages (including derivations).
+
 ## More about Specimen Skeleton
 
 <p align="center">
