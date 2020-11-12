@@ -9,6 +9,7 @@
 # Names should be added to this file as:
 # Name <email address>
 
+Mark Boulton <mark@typespecimens.xyz>
 Roel Nieskens <roel@pixelambacht.nl>
 Pascal Widdershoven <pascal@kabisa.nl>
 Guido Theelen <guido@kabisa.nl>
