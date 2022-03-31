@@ -299,6 +299,10 @@ button {
 	grid-template-areas: "title meta";
 }
 
+.masthead-title h2 {
+  font-weight: normal;
+}
+
 /* Responsive layout styles */
 @media only screen and (max-width: 590px) {
 	.masthead {
@@ -354,6 +358,10 @@ button {
 	grid-template-rows: 1fr;
 	gap: 1px 1px;
 	grid-template-areas: "preview controls";
+}
+
+.interactive-controls h1 {
+  font-weight: normal;
 }
 
 /* Responsive layout styles */
