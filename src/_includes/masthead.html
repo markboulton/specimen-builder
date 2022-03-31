@@ -5,6 +5,10 @@
 	</div>
 
 	<div class="masthead-meta">
+  {% if site.foundry %}
+    <h3>Foundry</h3>
+    <p>{{ site.foundry }}</p>
+  {% endif }
 	{% if site.link %}
 		<a href="{{ site.link }}" class="faux-button">Get {{ site.typeface }}</a>
 	{% endif %}
