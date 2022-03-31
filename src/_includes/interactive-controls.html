@@ -26,7 +26,7 @@
 				>
 					{% for font in fontdata %}
 					<option value="{{ font.selector }}" {% if font.selector == main_selector %}selected{% endif %}>
-						{{ font.style }}
+						{{ font.name }}
 					</option>
 					{% endfor %}
 				</select>
