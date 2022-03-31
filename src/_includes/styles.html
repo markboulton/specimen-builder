@@ -1,0 +1,11 @@
+<div id="styles">
+    {% if fontdata.length > 1 %}
+
+    <ul>
+    {% for font in fontdata %}
+    <li class="{{ font.selector }}"><span class="meta">{{ font.name }}</span><span class="sample">{{ font.name }}</span></li>
+    {% endfor %}
+    </ul>
+
+    {% endif %}
+</div>

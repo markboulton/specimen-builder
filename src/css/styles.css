@@ -1,0 +1,21 @@
+#styles .meta {
+  display: block;
+}
+
+#styles ul {
+  columns: 2;
+  column-gap: 4rem;
+}
+
+#styles li {
+  border-bottom: 1px solid var(--grey-light);
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#styles .sample {
+  font-size: 4em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
