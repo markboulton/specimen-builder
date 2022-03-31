@@ -10,7 +10,7 @@ module.exports = {
 
 	// Specimen. These are the four lines which are are set centred. The aim is to show different weights and styles, so choose content that is varied in nature.
 	specimen1: "BORN FREE",
-	specimen2: "Construção",
+	specimen2: "Construct",
 	specimen3: "Nineteen Eighty-Four, often published as 1984",
 	specimen4:
 		"Doublethink means the power of holding two contradictory beliefs in one’s mind simultaneously, and accepting",
