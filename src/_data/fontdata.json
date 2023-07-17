@@ -1,22 +1,102 @@
 [
 	{
-		"name": "STIX Two Text",
-		"selector": "stix-two-text",
-		"style": "Regular"
+		"name": "Europea-Regular",
+		"selector": "europea-regular",
+		"style": "regular"
 	},
 	{
-		"name": "STIX Two Text Italic",
-		"selector": "stix-two-text-italic",
-		"style": "Italic"
+		"name": "Europea-Bold",
+		"selector": "europea-bold",
+		"style": "bold"
 	},
 	{
-		"name": "STIX Two Text Bold",
-		"selector": "stix-two-text-bold",
-		"style": "Bold"
+		"name": "Europea-BoldItalic",
+		"selector": "europea-bolditalic",
+		"style": "italic bold"
 	},
 	{
-		"name": "STIX Two Text Bold Italic",
-		"selector": "stix-two-text-bold-italic",
-		"style": "Bold Italic"
+		"name": "Europea-Extrabold",
+		"selector": "europea-extrabold",
+		"style": "bold extrabold"
+	},
+	{
+		"name": "Europea-ExtraboldItalic",
+		"selector": "europea-extrabolditalic",
+		"style": "italic bold extrabold"
+	},
+	{
+		"name": "Europea-Extralight",
+		"selector": "europea-extralight",
+		"style": "extralight light"
+	},
+	{
+		"name": "Europea-ExtralightItalic",
+		"selector": "europea-extralightitalic",
+		"style": "italic extralight light"
+	},
+	{
+		"name": "Europea-Italic",
+		"selector": "europea-italic",
+		"style": "italic"
+	},
+	{
+		"name": "Europea-Light",
+		"selector": "europea-light",
+		"style": "light"
+	},
+	{
+		"name": "Europea-LightItalic",
+		"selector": "europea-lightitalic",
+		"style": "italic light"
+	},
+	{
+		"name": "Europea-Medium",
+		"selector": "europea-medium",
+		"style": "medium"
+	},
+	{
+		"name": "Europea-MediumItalic",
+		"selector": "europea-mediumitalic",
+		"style": "italic medium"
+	},
+	{
+		"name": "Europea-Semibold",
+		"selector": "europea-semibold",
+		"style": "semibold bold"
+	},
+	{
+		"name": "Europea-SemiboldItalic",
+		"selector": "europea-semibolditalic",
+		"style": "italic semibold bold"
+	},
+	{
+		"name": "Europea-Semilight",
+		"selector": "europea-semilight",
+		"style": "light"
+	},
+	{
+		"name": "Europea-SemilightItalic",
+		"selector": "europea-semilightitalic",
+		"style": "italic light"
+	},
+	{
+		"name": "Europea-Thin",
+		"selector": "europea-thin",
+		"style": "thin"
+	},
+	{
+		"name": "Europea-ThinItalic",
+		"selector": "europea-thinitalic",
+		"style": "italic thin"
+	},
+	{
+		"name": "Europea-Ultra",
+		"selector": "europea-ultra",
+		"style": "unknown"
+	},
+	{
+		"name": "Europea-UltraItalic",
+		"selector": "europea-ultraitalic",
+		"style": "italic"
 	}
 ]
