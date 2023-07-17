@@ -16,7 +16,7 @@ module.exports = {
 	link: "https://www.zetafonts.com", // This is the URL used for the button
 	about:
 		"This is a variable font with TrueType glyph outlines. It has 903 characters and 1281 glyphs, 1 axe and 10 instances, and 28 layout features.", // All about the typeface
-	designers: "Tiro Typeworks", // And who designed it
+	designers: "Zeta Fonts", // And who designed it
 	coverage: "Latin, Greek, & Cyrillic", // This populates the link that anchors to the list of languages.
 	language:
 		"Afrikaans, Albanian, Azerbaijani, Basque, Belarusian, Bosnian, Bulgarian, Catalan, Croatian, Czech, Danish, Dutch, English, Estonian, Faroese, Filipino, Finnish, French, Galician, German, Greek, Hungarian, Icelandic, Indonesian, Irish, Italian, Latvian, Lithuanian, Macedonian, Malay, Norwegian Bokmål, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swahili, Swedish, Turkish, Vietnamese, Welsh and Zulu.",

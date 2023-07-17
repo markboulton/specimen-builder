@@ -343,7 +343,7 @@ button {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 0.7em;
-	color: var(--grey-mid);
+	color: var(--grey-dark);
 }
 
 /* Preview layout */
@@ -533,7 +533,7 @@ input[type="range"]:focus::-ms-fill-upper {
 .character-grid h3 {
 	font-family: var(--font-system);
 	font-size: 0.7rem;
-	color: var(--grey-mid);
+	color: var(--grey-dark);
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }

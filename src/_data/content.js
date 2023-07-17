@@ -14,6 +14,8 @@ module.exports = {
 	specimen3: "Nineteen Eighty-Four, often published as 1984",
 	specimen4:
 		"«¼ gallon of milk, 25‰ of dosage, ⑦ Doublethinkª means the powerº of holdingᵉ two⁵ contradictoryʰ beliefs in one’s mind simultaneously, ¿and ❽ accepting ﬂowers or ﬁnances (ligatures) and special chars ☮ℓ‡ƒ↙ …»",
+	specimen5:
+		"«¼ gallon of milk, 25‰ of dosage, ⑦ Doublethinkª means the powerº of holdingᵉ two⁵ contradictoryʰ beliefs in one’s mind simultaneously, ¿and ❽ accepting ﬂowers or ﬁnances (ligatures) and special chars ☮ℓ‡ƒ↙ …»",
 
 	// Setting. These four variables correspond to each block of text in the setting container.
 	setting1: "Everyone has the right to life",
