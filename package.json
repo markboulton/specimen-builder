@@ -7,10 +7,10 @@
 	"scripts": {
 		"clean": "rimraf ./_site",
 		"build": "cross-env NODE_ENV=production ELEVENTY_ENV=production run-s clean 'build:*'",
-		"build:webpack": "webpack",
+		"build:webpack": "NODE_OPTIONS=--openssl-legacy-provider webpack",
 		"build:eleventy": "eleventy",
 		"start": "cross-env NODE_ENV=development ELEVENTY_ENV=development npm-run-all clean build:webpack --parallel 'start:*'",
-		"start:webpack": "webpack -w",
+		"start:webpack": "NODE_OPTIONS=--openssl-legacy-provider webpack -w",
 		"start:eleventy": "eleventy --serve",
 		"prettier": "prettier '{src/**/*.{js,css,json,html},*.js,*.json,*.html}'",
 		"stylelint": "stylelint 'src/css/**/*.css'",
